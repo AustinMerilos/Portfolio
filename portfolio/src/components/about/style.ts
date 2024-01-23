@@ -28,7 +28,8 @@ const GridContainer = styled.div`
 `;
 
 const SkillItem = styled.p`
-  background-color: #e0e0e0;
+  background-color: #1b2e35;
+  color: white;
   padding: 16px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);

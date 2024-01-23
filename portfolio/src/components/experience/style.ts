@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const ExperienceContainer = styled.section`
-  background-color: red;
+  background-color: white;
   padding: 15%;
 `;
 
