@@ -1,12 +1,13 @@
 // Example
 import React, { useState } from "react";
-import { IconButton, Link } from "@material-ui/core";
+import { Link } from "@material-ui/core";
 import {
   ListItem,
   Title,
   ListContainer,
   NavButton,
   CloseButton,
+  NavContainer,
 } from "./styles";
 import MenuIcon from "@material-ui/icons/Menu";
 import CloseIcon from "@material-ui/icons/Close";
@@ -45,7 +46,7 @@ const NavMenu = () => {
   const itemTransition = { opacity: { duration: 0.2 } };
 
   return (
-    <div>
+    <NavContainer>
       <NavButton onClick={() => setIsMenuOpen(true)}>
         <MenuIcon />
       </NavButton>
@@ -98,7 +99,7 @@ const NavMenu = () => {
           </motion.div>
         </motion.div>
       </ListContainer>
-    </div>
+    </NavContainer>
   );
 };
 

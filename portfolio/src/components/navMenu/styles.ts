@@ -1,6 +1,10 @@
 import { Menu, MenuItem, IconButton } from "@material-ui/core";
 import styled from "styled-components";
 
+export const NavContainer = styled.div`
+  background-color: rgba(255, 255, 255, 0.5); /* White with 50% transparency */
+  /* Other styles */
+`;
 export const ListContainer = styled(Menu)`
   top: 1.39em;
   right: 3.41em;
