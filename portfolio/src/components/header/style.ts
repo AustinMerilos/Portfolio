@@ -2,7 +2,7 @@ import { styled } from "styled-components";
 
 const HeaderSection = styled.section`
   background-color: #f8f8f8;
-  padding: 15%;
+  padding: 25%;
 `;
 
 const HeaderContainer = styled.div`
