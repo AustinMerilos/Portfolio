@@ -1,8 +1,7 @@
 import { styled } from "styled-components";
 
 const FooterContainer = styled.section`
-  background-color: lightblue;
-  padding: 15%;
+  background-color: #92e3a9;
 `;
 const FooterItemContainer = styled.div`
   top: 1.39em;
