@@ -27,7 +27,7 @@ export function ProjectSection() {
             link="nd"
             title="This project was completed as a code challenge in the interview process for a job. It's built with React & Next.js, it connects to the Guardian API to search for articles and the styling is done with Tailwind CSS"
             description=""
-            image={images.aboutImage}
+            image={images.upcomingProject}
           />
         </BlurOverlay>
       </ProjectInnerGrid>
