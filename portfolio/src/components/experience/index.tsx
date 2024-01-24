@@ -6,9 +6,12 @@ import {
   GridContainer,
   SubTitle,
   Title,
+  SkillContainer,
+  SkillItem,
+  CompanyLogo,
+  InnerGridContainer,
 } from "./style";
 import React, { useState } from "react";
-import images from "../../assets";
 
 const ExperienceSection = ({ experiences }: any) => {
   const [expandedItem, setExpandedItem] = useState<number | null>(null);
@@ -41,24 +44,27 @@ const ExperienceSection = ({ experiences }: any) => {
               >
                 <ExperienceInnerContainer>
                   <div key={index}>
-                    <p>{experience.name}</p>
-                    <img
-                      src={experience.image}
-                      alt={`Experience  for ${experience.title}`}
-                    />
-                    {experience.content.map((paragraph: string, i: number) => (
-                      <p key={i}>{paragraph}</p>
-                    ))}
-                    {experience.skills && (
+                    <InnerGridContainer>
                       <div>
-                        <p>Skills:</p>
-                        <div>
-                          {experience.skills.map((skill: string, j: number) => (
-                            <p key={j}>{skill}</p>
-                          ))}
-                        </div>
+                        <p>{experience.link}</p>
+                        <p>{experience.content}</p>
+                        {experience.skills && (
+                          <div>
+                            <SkillContainer>
+                              {experience.skills.map(
+                                (skill: string, j: number) => (
+                                  <SkillItem key={j}>{skill}</SkillItem>
+                                )
+                              )}
+                            </SkillContainer>
+                          </div>
+                        )}
                       </div>
-                    )}
+                      <CompanyLogo
+                        src={experience.image}
+                        alt={`Company logo for ${experience.title}`}
+                      />
+                    </InnerGridContainer>
                   </div>
                 </ExperienceInnerContainer>
               </motion.div>
