@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const AboutContainer = styled.section`
   margin: 10px;
-  background-color: #92e3a9;
+  background-color: #59e4a8;
   padding: 5%;
 `;
 const Image = styled.img`

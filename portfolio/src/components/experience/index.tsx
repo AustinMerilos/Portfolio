@@ -10,6 +10,9 @@ import {
   SkillItem,
   CompanyLogo,
   InnerGridContainer,
+  Website,
+  Description,
+  SubTitleContainer,
 } from "./style";
 import React, { useState } from "react";
 
@@ -27,10 +30,12 @@ const ExperienceSection = ({ experiences }: any) => {
         <div key={index}>
           <GridContainer>
             <SubTitle>{experience.title}</SubTitle>
-            <SubTitle>{experience.date}</SubTitle>
-            <ExpandButton onClick={() => handleButtonClick(index)}>
-              {expandedItem === index ? "-" : "+"}
-            </ExpandButton>
+            <SubTitleContainer>
+              <SubTitle>{experience.date}</SubTitle>
+              <ExpandButton onClick={() => handleButtonClick(index)}>
+                {expandedItem === index ? "-" : "+"}
+              </ExpandButton>
+            </SubTitleContainer>
           </GridContainer>
 
           <AnimatePresence>
@@ -46,8 +51,10 @@ const ExperienceSection = ({ experiences }: any) => {
                   <div key={index}>
                     <InnerGridContainer>
                       <div>
-                        <p>{experience.link}</p>
-                        <p>{experience.content}</p>
+                        <Website href={experience.website}>
+                          {experience.link}
+                        </Website>
+                        <Description>{experience.content}</Description>
                         {experience.skills && (
                           <div>
                             <SkillContainer>

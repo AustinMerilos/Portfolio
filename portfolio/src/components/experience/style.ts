@@ -1,8 +1,10 @@
+import { Link } from "@material-ui/core";
 import styled from "styled-components";
 
 const ExperienceContainer = styled.section`
   background-color: white;
-  padding: 5%;
+  padding-inline: 20%;
+  margin: 100px;
 `;
 const Title = styled.h1`
   font-size: 2.5em;
@@ -10,7 +12,17 @@ const Title = styled.h1`
   text-align: center;
 `;
 const SubTitle = styled.h2`
-  margin-bottom: 5px;
+  margin: 10px;
+`;
+
+const ExpandButton = styled.button`
+  margin: 5px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 4px solid white;
+  background-color: transparent;
+  color: white;
 `;
 
 const ExperienceInnerContainer = styled.div`
@@ -26,27 +38,33 @@ const InnerGridContainer = styled.div`
   justify-content: center;
 `;
 
-const GridContainer = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  gap: 250px;
-  padding: 5px;
-  justify-content: center;
-  background-color: #59e4a8;
-  border: 10px solid white;
-  border-radius: 15px;
-  text-wrap: nowrap;
+const Website = styled(Link)`
+  && {
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+`;
+const Description = styled.p`
+  color: black;
 `;
 
-const ExpandButton = styled.button`
-  margin-bottom: 10px;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  border: 4px solid white;
-  background-color: transparent;
-  color: white;
+const GridContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Center items vertically */
+  padding: 5px;
+  background-color: #59e4a8;
+
+  border-radius: 15px;
+  margin-bottom: 15px;
+  margin-top: 15px;
 `;
+
+const SubTitleContainer = styled.div`
+  display: flex;
+  align-items: center; /* Center items vertically within this container */
+`;
+
 const CompanyLogo = styled.img`
   width: 90px;
   max-width: 100%;
@@ -80,4 +98,7 @@ export {
   SkillItem,
   CompanyLogo,
   InnerGridContainer,
+  Description,
+  SubTitleContainer,
+  Website,
 };

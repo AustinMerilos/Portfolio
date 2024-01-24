@@ -59,6 +59,7 @@ export default function App() {
               link: "Swimply.com",
               image: images.aboutImage,
               skills: ["React", "JavaScript", "CSS", "Reduux", "Flutter"],
+              website: "https://www.google.com",
             },
             {
               title: "FreeLance",
@@ -69,6 +70,7 @@ export default function App() {
               link: "Jane Smith",
               image: images.aboutImage,
               skills: ["Node.js", "Express", "MongoDB"],
+              website: "https://www.google.com",
             },
             {
               title: "UL STEP Dept.",
@@ -79,6 +81,7 @@ export default function App() {
               link: "step.louisiana.edu",
               image: images.aboutImage,
               skills: ["Python", "Django", "PostgreSQL"],
+              website: "https://www.google.com",
             },
             // Add more experiences as needed
           ]}
