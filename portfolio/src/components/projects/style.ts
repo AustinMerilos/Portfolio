@@ -13,9 +13,9 @@ const Title = styled.h1`
 const ProjectInnerGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  gap: 95px; /* Reduced the gap */
+  gap: 100px;
 
-  justify-content: center; /* Center items horizontally */
+  justify-content: center;
 `;
 const SingleProjectContainer = styled.div`
   background-color: white;
@@ -24,7 +24,7 @@ const SingleProjectContainer = styled.div`
   contain: content;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center horizontally */
+  align-items: center;
 `;
 
 const ProjectImage = styled.img`
@@ -51,7 +51,10 @@ const ProjectLinks = styled.button`
   margin-bottom: 10px;
 `;
 const BlurOverlay = styled.div`
-  filter: blur(5px); // Adjust the blur intensity as needed
+  filter: blur(5px);
+`;
+const TextOverlay = styled.div`
+  color: blue;
 `;
 
 export {
@@ -65,4 +68,5 @@ export {
   ProjectInnerGrid,
   ProjectLinkGrid,
   BlurOverlay,
+  TextOverlay,
 };

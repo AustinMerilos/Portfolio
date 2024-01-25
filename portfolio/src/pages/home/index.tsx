@@ -5,9 +5,9 @@ import Header from "../../components/header";
 import Footer from "../../components/footer";
 import { AboutSection } from "../../components/about";
 import { ProjectSection } from "../../components/projects";
-import EmailSection from "../../components/email";
 import ExperienceSection from "../../components/experience";
 import images from "../../assets";
+import EmailSection from "../../components/moreAbout";
 
 const sectionVariant = {
   visible: { opacity: 1, y: 0, x: 0, scale: 1, transition: { duration: 0.5 } },
@@ -38,7 +38,7 @@ const AnimatedComponent = ({ children }: any) => {
   );
 };
 
-export default function App() {
+export default function Home() {
   return (
     <div>
       <Header />
@@ -89,10 +89,11 @@ export default function App() {
       </AnimatedComponent>
 
       <AnimatedComponent>
-        <ProjectSection />
-      </AnimatedComponent>
-      <AnimatedComponent>
         <EmailSection />
+      </AnimatedComponent>
+
+      <AnimatedComponent>
+        <ProjectSection />
       </AnimatedComponent>
 
       <AnimatedComponent>

@@ -1,5 +1,4 @@
-// Example
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "@material-ui/core";
 import {
   ListItem,
@@ -8,13 +7,30 @@ import {
   NavButton,
   CloseButton,
   NavContainer,
+  MenuButton,
+  SocialImage,
 } from "./styles";
-import MenuIcon from "@material-ui/icons/Menu";
+
 import CloseIcon from "@material-ui/icons/Close";
 import { motion } from "framer-motion";
+import images from "../../assets";
 
 const NavMenu = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  useEffect(() => {
+    const handleBodyScroll = () => {
+      document.body.style.overflow = isMenuOpen ? "hidden" : "visible";
+    };
+
+    handleBodyScroll(); // Initial setup
+
+    window.addEventListener("scroll", handleBodyScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleBodyScroll);
+    };
+  }, [isMenuOpen]);
 
   const handleCloseMenu = () => {
     setIsMenuOpen(false);
@@ -47,14 +63,14 @@ const NavMenu = () => {
 
   return (
     <NavContainer>
-      <NavButton onClick={() => setIsMenuOpen(true)}>
-        <MenuIcon />
+      <NavButton onClick={() => setIsMenuOpen((open) => !open)}>
+        <MenuButton />
       </NavButton>
       <ListContainer
         anchorOrigin={{ vertical: "top", horizontal: "right" }}
         transformOrigin={{ vertical: "top", horizontal: "right" }}
         open={isMenuOpen}
-        onClose={() => setIsMenuOpen(false)}
+        onClose={handleCloseMenu}
       >
         <motion.div
           variants={menuVariants}
@@ -76,7 +92,7 @@ const NavMenu = () => {
           <motion.div variants={itemVariants} transition={itemTransition}>
             <ListItem>
               <Link href="/" underline="none" color="inherit">
-                My Projects
+                Experience
               </Link>
             </ListItem>
           </motion.div>
@@ -86,14 +102,25 @@ const NavMenu = () => {
           <motion.div variants={itemVariants} transition={itemTransition}>
             <ListItem>
               <Link href="/" underline="none" color="inherit">
-                Email
+                austin.merilos@gmail.com
               </Link>
             </ListItem>
           </motion.div>
           <motion.div variants={itemVariants} transition={itemTransition}>
             <ListItem>
-              <Link href="/" underline="none" color="inherit">
-                Socials
+              <Link
+                href="https://www.linkedin.com/in/austinmerilos"
+                underline="none"
+                color="inherit"
+              >
+                <SocialImage src={images.linkedin} />
+              </Link>
+              <Link
+                href="https://github.com/AustinMerilos"
+                underline="none"
+                color="inherit"
+              >
+                <SocialImage src={images.github} />
               </Link>
             </ListItem>
           </motion.div>

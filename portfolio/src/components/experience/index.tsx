@@ -25,7 +25,7 @@ const ExperienceSection = ({ experiences }: any) => {
 
   return (
     <ExperienceContainer>
-      <Title>Work History</Title>
+      <Title>Professional Experience</Title>
       {experiences.map((experience: any, index: number) => (
         <div key={index}>
           <GridContainer>

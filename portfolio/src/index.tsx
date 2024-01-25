@@ -1,7 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import NavMenu from "./components/navMenu";
-import App from "./pages/home";
+import Home from "./pages/home";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -9,6 +10,10 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <NavMenu />
-    <App />
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+      </Routes>
+    </Router>
   </React.StrictMode>
 );

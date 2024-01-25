@@ -5,6 +5,7 @@ const AboutContainer = styled.section`
   margin: 10px;
   background-color: #59e4a8;
   padding: 5%;
+  // clip-path: polygon(4% 1%, 100% 49%, 84% 100%, 0 85%);
 `;
 const Image = styled.img`
   max-width: 35%;
@@ -19,7 +20,8 @@ const Title = styled.h1`
   margin-bottom: 10px;
 `;
 const GridContainer = styled.div`
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   gap: 8px; /* Reduced the gap */
   padding: 16px;

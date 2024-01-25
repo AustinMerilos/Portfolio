@@ -5,6 +5,7 @@ import {
   BlurOverlay,
   ProjectContainer,
   ProjectInnerGrid,
+  TextOverlay,
   Title,
 } from "./style";
 
@@ -30,6 +31,7 @@ export function ProjectSection() {
             image={images.upcomingProject}
           />
         </BlurOverlay>
+        <TextOverlay>Coming soon</TextOverlay>
       </ProjectInnerGrid>
     </ProjectContainer>
   );

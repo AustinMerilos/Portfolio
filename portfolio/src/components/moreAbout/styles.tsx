@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const EmailContainer = styled.section`
   margin: 10px;
-  background-color: #fffff;
+  background-color: #d5f8e5;
   padding: 15%;
 `;
 const EmailInnerContainer = styled.section`

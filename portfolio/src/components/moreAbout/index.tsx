@@ -1,11 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import { EmailContainer, EmailInnerContainer, SubTitle, Title } from "./styles";
 
 function EmailSection() {
   return (
     <EmailContainer>
       <EmailInnerContainer>
-        <Title>Work History</Title>
+        <Title>What i'm up to</Title>
+        <Title>Education</Title>
         <SubTitle>Wrk history and education</SubTitle>
       </EmailInnerContainer>
     </EmailContainer>

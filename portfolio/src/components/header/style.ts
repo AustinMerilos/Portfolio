@@ -1,33 +1,47 @@
 import { styled } from "styled-components";
+import images from "../../assets";
 
 const HeaderSection = styled.section`
-  background-color: #f8f8f8;
-  padding: 25%;
+  background-color: white;
+  padding: 6rem 12rem;
+  display: flex;
+  gap: 300px;
+  background-image: url(${images.headerBackGround});
+  background-size: cover; /* Adjust as needed */
+  background-position: center;
 `;
 
 const HeaderContainer = styled.div`
   max-width: 800px;
   margin: 0 auto;
+  display: inline-block;
 `;
 
 const HeaderContent = styled.div`
   text-align: center;
+  display: flex;
+  margin-top: 150px;
+  gap: 25px;
 `;
 
 const Title = styled.h1`
-  font-size: 2.5em;
+  font-size: 3.5em;
+
   margin-bottom: 10px;
 `;
 
 const Subtitle = styled.p`
   font-size: 1.5em;
-  color: #555;
   margin-bottom: 20px;
 `;
 
 const Paragraph = styled.p`
   font-size: 1em;
-  color: #777;
+`;
+const HeadShot = styled.img`
+  width: 350px;
+  height: fit-content;
+  border-radius: 30px;
 `;
 
 export {
@@ -37,4 +51,5 @@ export {
   HeaderContent,
   Subtitle,
   Paragraph,
+  HeadShot,
 };

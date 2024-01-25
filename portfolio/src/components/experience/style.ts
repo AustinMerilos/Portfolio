@@ -1,10 +1,13 @@
 import { Link } from "@material-ui/core";
 import styled from "styled-components";
+import images from "../../assets";
 
 const ExperienceContainer = styled.section`
   background-color: white;
-  padding-inline: 20%;
-  margin: 100px;
+  padding: 15%;
+  background-image: url(${images.experienceBackGround});
+  background-size: cover;
+  background-position: center;
 `;
 const Title = styled.h1`
   font-size: 2.5em;
@@ -17,12 +20,13 @@ const SubTitle = styled.h2`
 
 const ExpandButton = styled.button`
   margin: 5px;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   border: 4px solid white;
   background-color: transparent;
   color: white;
+  font-size: 25px;
 `;
 
 const ExperienceInnerContainer = styled.div`
