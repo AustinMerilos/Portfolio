@@ -17,7 +17,7 @@ export default function Header() {
         <HeaderContainer>
           <Title>Frontend Developer</Title>
           <Subtitle>
-            like to craft solid and scalable frontend products with great user
+            I like to craft solid and scalable frontend products with great user
             experiences.
           </Subtitle>
         </HeaderContainer>

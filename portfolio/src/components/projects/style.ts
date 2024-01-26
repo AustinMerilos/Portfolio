@@ -3,8 +3,7 @@ import styled from "styled-components";
 
 const ProjectContainer = styled.section`
   background-color: #d5f8e5;
-  padding: 3%;
-  margin: 10px;
+  padding: 3% 5%;
 `;
 
 const Title = styled.h1`
@@ -48,7 +47,7 @@ const ProjectLinkGrid = styled.div`
   gap: 20px;
   justify-content: center;
 `;
-const ProjectLinks = styled(Link)`
+const ProjectLinks = styled.a`
   && {
     background-color: #1b2e35;
     color: white;
@@ -58,6 +57,11 @@ const ProjectLinks = styled(Link)`
     text-align: center;
     text-decoration: none;
     cursor: pointer;
+    &:hover {
+      transform: scale(1.2);
+      background-color: #59e4a8;
+      color: black;
+    }
   }
 `;
 

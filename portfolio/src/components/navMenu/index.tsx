@@ -13,6 +13,7 @@ import {
 } from "./styles";
 
 import CloseIcon from "@material-ui/icons/Close";
+import MenuOpenIcon from "@mui/icons-material/MenuOpen";
 import { motion } from "framer-motion";
 import images from "../../assets";
 
@@ -24,7 +25,7 @@ const NavMenu = () => {
       document.body.style.overflow = isMenuOpen ? "hidden" : "visible";
     };
 
-    handleBodyScroll(); // Initial setup
+    handleBodyScroll();
 
     window.addEventListener("scroll", handleBodyScroll);
 
@@ -63,7 +64,6 @@ const NavMenu = () => {
   const itemTransition = { opacity: { duration: 0.2 } };
 
   const emailAddress = "austin.merilos@gmail";
-
   const handleEmailClick = () => {
     window.location.href = `mailto:${emailAddress}`;
   };
@@ -86,7 +86,7 @@ const NavMenu = () => {
         >
           <motion.div variants={itemVariants} transition={itemTransition}>
             <CloseButton onClick={handleCloseMenu}>
-              <CloseIcon />
+              <MenuOpenIcon />
             </CloseButton>
           </motion.div>
 
@@ -99,7 +99,7 @@ const NavMenu = () => {
           </motion.div>
           <motion.div variants={itemVariants} transition={itemTransition}>
             <ListItem>
-              <Link href="/" underline="none" color="inherit">
+              <Link href="/experience" underline="none" color="inherit">
                 Experience
               </Link>
             </ListItem>

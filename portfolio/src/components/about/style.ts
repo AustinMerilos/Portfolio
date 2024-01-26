@@ -1,5 +1,6 @@
 import { Link } from "@material-ui/core";
 import styled from "styled-components";
+import media from "../../utils/styleSizes";
 
 const AboutContainer = styled.section`
   background-color: #59e4a8;

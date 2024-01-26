@@ -1,6 +1,7 @@
 import { Menu, MenuItem, IconButton } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
 import styled from "styled-components";
+import media from "../../utils/styleSizes";
 
 const NavContainer = styled.div`
   background-color: transparent;
@@ -8,15 +9,24 @@ const NavContainer = styled.div`
   top: 25px;
   right: 25px;
   z-index: 1000;
+  ${media.mobile`
+   
+
+  `}
+  ${media.tablet`
+    
+
+  `}
 `;
 const ListContainer = styled(Menu)`
   && {
     top: 1.39em !important;
-    right: 3.41em;
-    width: 22.223em;
-    font-size: 1.1em;
+    right: 3.41em !important;
+    width: 22.223em !important;
+    font-size: 1.1em !important;
   }
 `;
+
 const ListItem = styled(MenuItem)`
   && {
     color: black;

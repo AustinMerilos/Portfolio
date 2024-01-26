@@ -8,6 +8,8 @@ import headerBackGround from "./headerBackGround.svg";
 import experienceBackGround from "./experienceBackground.svg";
 import linkedin from "./linkedin.png";
 import github from "./github-mark.png";
+import desktop from "./desktop.svg";
+import currentBackGround from "./currentBackground.svg";
 
 const images = {
   aboutImage,
@@ -20,6 +22,8 @@ const images = {
   experienceBackGround,
   linkedin,
   github,
+  desktop,
+  currentBackGround,
 };
 
 export default images;

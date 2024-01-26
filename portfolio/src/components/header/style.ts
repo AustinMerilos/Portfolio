@@ -1,5 +1,6 @@
 import { styled } from "styled-components";
 import images from "../../assets";
+import media from "../../utils/styleSizes";
 
 const HeaderSection = styled.section`
   background-color: white;
@@ -9,6 +10,18 @@ const HeaderSection = styled.section`
   background-image: url(${images.headerBackGround});
   background-size: cover; /* Adjust as needed */
   background-position: center;
+
+  ${media.mobile`
+    padding: 4rem;
+    display: contents;
+    background-image: none;
+
+  `}
+  ${media.tablet`
+    padding: 4rem;
+    gap: 0;
+
+  `}
 `;
 
 const HeaderContainer = styled.div`

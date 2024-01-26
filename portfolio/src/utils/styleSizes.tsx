@@ -10,7 +10,7 @@ interface MediaSizes {
 type MediaFunction = {
   [key in keyof MediaSizes]: (
     strings: TemplateStringsArray | CSSObject,
-    ...interpolations: (string | number)[]
+    ...interpolations: number[]
   ) => ReturnType<typeof css>;
 };
 
@@ -25,9 +25,9 @@ const media = (Object.keys(sizes) as Array<keyof MediaSizes>).reduce(
   (acc, label) => {
     acc[label] = (
       strings: TemplateStringsArray | CSSObject,
-      ...interpolations: (string | number)[]
+      ...interpolations: number[]
     ) => css`
-      @media (min-width: ${sizes[label]}px) {
+      @media (max-width: ${sizes[label]}px) {
         ${css(strings, ...interpolations)}
       }
     `;

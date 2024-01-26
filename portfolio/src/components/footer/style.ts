@@ -1,23 +1,46 @@
 import { Link } from "@material-ui/core";
 import { styled } from "styled-components";
+import media from "../../utils/styleSizes";
 
 const FooterContainer = styled.section`
   background-color: #59e4a8;
   padding: 12rem 19rem;
+  ${media.mobile`
+   padding: 2rem 0rem;
+
+  `}
+  ${media.tablet`
+    padding:4rem 5rem;
+
+  `}
 `;
 const FooterInnerContainer = styled.div`
   font-size: 1.1em;
   display: flex;
+
+  ${media.mobile`
+   font-size: 0.5em;
+
+  `}
+  ${media.tablet`
+   font-size: 0.8em;
+
+  `}
 `;
 const FooterItemContainer = styled.div`
   top: 1.39em;
   right: 3.41em;
   width: 22.223em;
   font-size: 1.1em;
+  display: grid;
+  cursor: pointer;
 `;
 
-const NavLinks = styled.p`
-  color: black;
+const NavLinks = styled(Link)`
+  && {
+    color: black;
+    text-decoration: none;
+  }
 `;
 const CopyRight = styled.p`
   color: black;

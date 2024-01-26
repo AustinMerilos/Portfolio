@@ -32,7 +32,7 @@ export default function Footer() {
 
         <FooterItemContainer>
           <NavLinks>Resume</NavLinks>
-          <NavLinks>Experience</NavLinks>
+          <NavLinks href="/experience">Experience</NavLinks>
           <NavLinks>Something</NavLinks>
         </FooterItemContainer>
       </FooterInnerContainer>
