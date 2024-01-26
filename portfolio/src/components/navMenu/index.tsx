@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "@material-ui/core";
+import { Link, Menu } from "@material-ui/core";
 import {
   ListItem,
   Title,
@@ -69,71 +69,76 @@ const NavMenu = () => {
   };
 
   return (
-    <NavContainer>
-      <NavButton onClick={() => setIsMenuOpen((open) => !open)}>
-        <MenuButton />
-      </NavButton>
-      <ListContainer
+    <>
+      <NavContainer>
+        <NavButton onClick={() => setIsMenuOpen((open) => !open)}>
+          <MenuButton />
+        </NavButton>
+      </NavContainer>
+
+      <Menu
         anchorOrigin={{ vertical: "top", horizontal: "right" }}
         transformOrigin={{ vertical: "top", horizontal: "right" }}
         open={isMenuOpen}
         onClose={handleCloseMenu}
       >
-        <motion.div
-          variants={menuVariants}
-          animate={isMenuOpen ? "open" : "closed"}
-          initial="closed"
-        >
-          <motion.div variants={itemVariants} transition={itemTransition}>
-            <CloseButton onClick={handleCloseMenu}>
-              <MenuOpenIcon />
-            </CloseButton>
-          </motion.div>
+        <>
+          <motion.div
+            variants={menuVariants}
+            animate={isMenuOpen ? "open" : "closed"}
+            initial="closed"
+          >
+            <motion.div variants={itemVariants} transition={itemTransition}>
+              <CloseButton onClick={handleCloseMenu}>
+                <MenuOpenIcon />
+              </CloseButton>
+            </motion.div>
 
-          <motion.div variants={itemVariants} transition={itemTransition}>
-            <ListItem>
-              <Link href="/" underline="none" color="inherit">
-                Resume
-              </Link>
-            </ListItem>
-          </motion.div>
-          <motion.div variants={itemVariants} transition={itemTransition}>
-            <ListItem>
-              <Link href="/experience" underline="none" color="inherit">
-                Experience
-              </Link>
-            </ListItem>
-          </motion.div>
-          <motion.div variants={itemVariants} transition={itemTransition}>
-            <Title>Say Hello</Title>
-          </motion.div>
+            <motion.div variants={itemVariants} transition={itemTransition}>
+              <ListItem>
+                <Link href="/" underline="none" color="inherit">
+                  Resume
+                </Link>
+              </ListItem>
+            </motion.div>
+            <motion.div variants={itemVariants} transition={itemTransition}>
+              <ListItem>
+                <Link href="/experience" underline="none" color="inherit">
+                  Experience
+                </Link>
+              </ListItem>
+            </motion.div>
+            <motion.div variants={itemVariants} transition={itemTransition}>
+              <Title>Say Hello</Title>
+            </motion.div>
 
-          <motion.div variants={itemVariants} transition={itemTransition}>
-            <ListItem>
-              <Link
-                href={`mailto:${emailAddress}`}
-                onClick={handleEmailClick}
-                underline="none"
-                color="inherit"
-              >
-                austin.merilos@gmail.com
-              </Link>
-            </ListItem>
-          </motion.div>
+            <motion.div variants={itemVariants} transition={itemTransition}>
+              <ListItem>
+                <Link
+                  href={`mailto:${emailAddress}`}
+                  onClick={handleEmailClick}
+                  underline="none"
+                  color="inherit"
+                >
+                  austin.merilos@gmail.com
+                </Link>
+              </ListItem>
+            </motion.div>
 
-          <motion.div variants={itemVariants} transition={itemTransition}>
-            <SocialContainer>
-              <Link href="https://www.linkedin.com/in/austinmerilos">
-                <SocialImage src={images.linkedin} />
-              </Link>
-              <Link href="https://github.com/AustinMerilos">
-                <SocialImage src={images.github} />
-              </Link>
-            </SocialContainer>
+            <motion.div variants={itemVariants} transition={itemTransition}>
+              <SocialContainer>
+                <Link href="https://www.linkedin.com/in/austinmerilos">
+                  <SocialImage src={images.linkedin} />
+                </Link>
+                <Link href="https://github.com/AustinMerilos">
+                  <SocialImage src={images.github} />
+                </Link>
+              </SocialContainer>
+            </motion.div>
           </motion.div>
-        </motion.div>
-      </ListContainer>
-    </NavContainer>
+        </>
+      </Menu>
+    </>
   );
 };
 

@@ -8,6 +8,7 @@ import { ProjectSection } from "../../components/projects";
 import ExperienceSection from "../../components/experience";
 import CurrentlySection from "../../components/currently";
 import { experiencesData } from "./constants";
+import { Container } from "./style";
 
 const sectionVariant = {
   visible: { opacity: 1, y: 0, x: 0, scale: 1, transition: { duration: 0.5 } },
@@ -40,7 +41,7 @@ const AnimatedComponent = ({ children }: any) => {
 
 export default function Home() {
   return (
-    <>
+    <Container>
       <Header />
 
       <AnimatedComponent>
@@ -60,6 +61,6 @@ export default function Home() {
       <AnimatedComponent>
         <Footer />
       </AnimatedComponent>
-    </>
+    </Container>
   );
 }
