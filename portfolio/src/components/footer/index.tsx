@@ -15,12 +15,19 @@ import {
 } from "./style";
 
 export default function Footer() {
+  const emailAddress = "austin.merilos@gmail";
+
+  const handleEmailClick = () => {
+    window.location.href = `mailto:${emailAddress}`;
+  };
   return (
     <FooterContainer>
       <FooterInnerContainer>
         <FooterItemContainer>
           <Title>Say Hello</Title>
-          <Email>austin.merilos@gmail</Email>
+          <Email href={`mailto:${emailAddress}`} onClick={handleEmailClick}>
+            austin.merilos@gmail
+          </Email>
         </FooterItemContainer>
 
         <FooterItemContainer>

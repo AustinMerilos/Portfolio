@@ -2,7 +2,6 @@ import { Link } from "@material-ui/core";
 import styled from "styled-components";
 
 const AboutContainer = styled.section`
-  margin: 10px;
   background-color: #59e4a8;
   padding: 5%;
   // clip-path: polygon(4% 1%, 100% 49%, 84% 100%, 0 85%);

@@ -11,14 +11,16 @@ type SingleProjectItems = {
   title?: string;
   image?: string;
   description?: string;
-  link: string;
+  source: string;
+  liveSource?: string;
 };
 
 export default function SingleProject({
   title,
   image,
-  link,
   description,
+  source,
+  liveSource,
 }: SingleProjectItems) {
   return (
     <SingleProjectContainer>
@@ -26,8 +28,8 @@ export default function SingleProject({
       <ProjectTitle>{title}</ProjectTitle>
       <ProjectDescription>{description}</ProjectDescription>
       <ProjectLinkGrid>
-        <ProjectLinks>{link}</ProjectLinks>
-        <ProjectLinks>live</ProjectLinks>
+        {source && <ProjectLinks href={source}>GitHub</ProjectLinks>}
+        {liveSource && <ProjectLinks href={liveSource}>Live Demo</ProjectLinks>}
       </ProjectLinkGrid>
     </SingleProjectContainer>
   );

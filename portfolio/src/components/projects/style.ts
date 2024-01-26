@@ -1,3 +1,4 @@
+import { Link } from "@material-ui/core";
 import styled from "styled-components";
 
 const ProjectContainer = styled.section`
@@ -47,14 +48,34 @@ const ProjectLinkGrid = styled.div`
   gap: 20px;
   justify-content: center;
 `;
-const ProjectLinks = styled.button`
-  margin-bottom: 10px;
+const ProjectLinks = styled(Link)`
+  && {
+    background-color: #1b2e35;
+    color: white;
+    padding: 6px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+  }
+`;
+
+const BlurOverlayContainer = styled.div`
+  position: relative;
 `;
 const BlurOverlay = styled.div`
   filter: blur(5px);
 `;
 const TextOverlay = styled.div`
-  color: blue;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #1b2e35;
+  font-size: 34px;
+  font-weight: bold;
+  text-align: center;
 `;
 
 export {
@@ -69,4 +90,5 @@ export {
   ProjectLinkGrid,
   BlurOverlay,
   TextOverlay,
+  BlurOverlayContainer,
 };

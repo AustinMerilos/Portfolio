@@ -1,13 +1,16 @@
 import { Link } from "@material-ui/core";
 import styled from "styled-components";
 import images from "../../assets";
-
+import LanguageIcon from "@mui/icons-material/Language";
 const ExperienceContainer = styled.section`
   background-color: white;
-  padding: 15%;
+  padding: 8%;
   background-image: url(${images.experienceBackGround});
   background-size: cover;
   background-position: center;
+`;
+const ExperineceOutterContainer = styled.section`
+  padding: 0 24%;
 `;
 const Title = styled.h1`
   font-size: 2.5em;
@@ -66,7 +69,7 @@ const GridContainer = styled.div`
 
 const SubTitleContainer = styled.div`
   display: flex;
-  align-items: center; /* Center items vertically within this container */
+  align-items: center;
 `;
 
 const CompanyLogo = styled.img`
@@ -91,6 +94,10 @@ const SkillItem = styled.p`
   text-align: center;
 `;
 
+const WebsiteImage = styled(LanguageIcon)`
+  color: black;
+`;
+
 export {
   ExperienceContainer,
   ExperienceInnerContainer,
@@ -105,4 +112,6 @@ export {
   Description,
   SubTitleContainer,
   Website,
+  ExperineceOutterContainer,
+  WebsiteImage,
 };

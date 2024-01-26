@@ -9,6 +9,7 @@ import {
   NavContainer,
   MenuButton,
   SocialImage,
+  SocialContainer,
 } from "./styles";
 
 import CloseIcon from "@material-ui/icons/Close";
@@ -61,6 +62,12 @@ const NavMenu = () => {
 
   const itemTransition = { opacity: { duration: 0.2 } };
 
+  const emailAddress = "austin.merilos@gmail";
+
+  const handleEmailClick = () => {
+    window.location.href = `mailto:${emailAddress}`;
+  };
+
   return (
     <NavContainer>
       <NavButton onClick={() => setIsMenuOpen((open) => !open)}>
@@ -82,6 +89,7 @@ const NavMenu = () => {
               <CloseIcon />
             </CloseButton>
           </motion.div>
+
           <motion.div variants={itemVariants} transition={itemTransition}>
             <ListItem>
               <Link href="/" underline="none" color="inherit">
@@ -99,30 +107,29 @@ const NavMenu = () => {
           <motion.div variants={itemVariants} transition={itemTransition}>
             <Title>Say Hello</Title>
           </motion.div>
+
           <motion.div variants={itemVariants} transition={itemTransition}>
             <ListItem>
-              <Link href="/" underline="none" color="inherit">
+              <Link
+                href={`mailto:${emailAddress}`}
+                onClick={handleEmailClick}
+                underline="none"
+                color="inherit"
+              >
                 austin.merilos@gmail.com
               </Link>
             </ListItem>
           </motion.div>
+
           <motion.div variants={itemVariants} transition={itemTransition}>
-            <ListItem>
-              <Link
-                href="https://www.linkedin.com/in/austinmerilos"
-                underline="none"
-                color="inherit"
-              >
+            <SocialContainer>
+              <Link href="https://www.linkedin.com/in/austinmerilos">
                 <SocialImage src={images.linkedin} />
               </Link>
-              <Link
-                href="https://github.com/AustinMerilos"
-                underline="none"
-                color="inherit"
-              >
+              <Link href="https://github.com/AustinMerilos">
                 <SocialImage src={images.github} />
               </Link>
-            </ListItem>
+            </SocialContainer>
           </motion.div>
         </motion.div>
       </ListContainer>

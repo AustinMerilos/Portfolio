@@ -3,7 +3,7 @@ import images from "../../assets";
 
 const HeaderSection = styled.section`
   background-color: white;
-  padding: 6rem 12rem;
+  padding: 12rem;
   display: flex;
   gap: 300px;
   background-image: url(${images.headerBackGround});
@@ -41,7 +41,7 @@ const Paragraph = styled.p`
 const HeadShot = styled.img`
   width: 350px;
   height: fit-content;
-  border-radius: 30px;
+  border-radius: 180px;
 `;
 
 export {

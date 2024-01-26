@@ -67,7 +67,7 @@ export default function Home() {
                 "Developed the UI and UX eco-system for a conference event platform using modular component structures with JS, SCSS, Gulp on Node.",
 
               date: "2019 - 2020",
-              link: "Jane Smith",
+              link: "",
               image: images.aboutImage,
               skills: ["Node.js", "Express", "MongoDB"],
               website: "https://www.google.com",
@@ -87,13 +87,11 @@ export default function Home() {
           ]}
         />
       </AnimatedComponent>
-
-      <AnimatedComponent>
-        <EmailSection />
-      </AnimatedComponent>
-
       <AnimatedComponent>
         <ProjectSection />
+      </AnimatedComponent>
+      <AnimatedComponent>
+        <EmailSection />
       </AnimatedComponent>
 
       <AnimatedComponent>

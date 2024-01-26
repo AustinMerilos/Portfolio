@@ -10,10 +10,12 @@ const NavContainer = styled.div`
   z-index: 1000;
 `;
 const ListContainer = styled(Menu)`
-  top: 1.39em !important;
-  right: 3.41em;
-  width: 22.223em;
-  font-size: 1.1em;
+  && {
+    top: 1.39em !important;
+    right: 3.41em;
+    width: 22.223em;
+    font-size: 1.1em;
+  }
 `;
 const ListItem = styled(MenuItem)`
   && {
@@ -22,6 +24,7 @@ const ListItem = styled(MenuItem)`
     margin-left: 150px;
   }
 `;
+const SocialContainer = styled.div``;
 const NavButton = styled(IconButton)`
   && {
     margin-left: auto;
@@ -33,6 +36,7 @@ const MenuButton = styled(MenuIcon)`
   && {
     width: 50px;
     height: 50px;
+    color: #1b2e35;
   }
 `;
 const CloseButton = styled(IconButton)`
@@ -53,11 +57,12 @@ const Title = styled.div`
 `;
 
 const SocialImage = styled.img`
-  margin-bottom: 5px;
+  margin: 5px;
   border-radius: 5px;
   height: 25px;
   object-fit: cover;
 `;
+
 export {
   SocialImage,
   NavButton,
@@ -67,4 +72,5 @@ export {
   MenuButton,
   ListContainer,
   ListItem,
+  SocialContainer,
 };
