@@ -10,6 +10,9 @@ import linkedin from "./linkedin.png";
 import github from "./github-mark.png";
 import desktop from "./desktop.svg";
 import currentBackGround from "./currentBackground.svg";
+import swimply from "./swimplyLogo.svg";
+import UlLogo from "./ULL-logo-vertical.svg";
+import lapTop from "./lapTop.svg";
 
 const images = {
   aboutImage,
@@ -24,6 +27,9 @@ const images = {
   github,
   desktop,
   currentBackGround,
+  swimply,
+  UlLogo,
+  lapTop,
 };
 
 export default images;

@@ -21,10 +21,14 @@ const skillData = [
   { id: 6, name: "React Native" },
   { id: 7, name: "Next.js" },
   { id: 8, name: "SQL" },
-  { id: 9, name: "CMS" },
+  { id: 9, name: "Microsoft Suite" },
   { id: 10, name: "Jira" },
   { id: 11, name: "Yarn" },
   { id: 12, name: "KeyStone" },
+  { id: 13, name: "Adobe Creative Suite" },
+  { id: 14, name: "Slack" },
+  { id: 15, name: "Visual Studio Code" },
+  { id: 16, name: "CMS" },
   // Add more skills as needed
 ];
 
@@ -44,11 +48,13 @@ export function AboutSection() {
           <BioContainer>
             <SubBioTitle>A little about me</SubBioTitle>
             <SubBio>
-              I started playing with computers when I was 11 years-old. Since
-              then I have been tinkering with all sorts of technologies that in
-              some way or another led me to work on music, photography, sound
-              engineering, electric engineering, automation, video production,
-              feature film post-production, VR games, and 3D sound.
+              Software Engineer with a demonstrated history of working with web
+              and mobile applications. Strong programming and communication
+              professional with a bachelor's degree focused in Computer
+              Informatics and a 2nd bachelor's in Mass Communication from The
+              University of Louisiana at Lafayette. I hope to learn and gain
+              experience from the growing industry of technology and
+              communication.
             </SubBio>
             <ReadMore href="/bio">Read more</ReadMore>
           </BioContainer>

@@ -6,8 +6,8 @@ import Footer from "../../components/footer";
 import { AboutSection } from "../../components/about";
 import { ProjectSection } from "../../components/projects";
 import ExperienceSection from "../../components/experience";
-import images from "../../assets";
 import CurrentlySection from "../../components/currently";
+import { experiencesData } from "./constants";
 
 const sectionVariant = {
   visible: { opacity: 1, y: 0, x: 0, scale: 1, transition: { duration: 0.5 } },
@@ -48,43 +48,7 @@ export default function Home() {
       </AnimatedComponent>
 
       <AnimatedComponent>
-        <ExperienceSection
-          experiences={[
-            {
-              title: "Swimply",
-              content:
-                "Developing front-end and mobile app solutions (B2C, B2B) in Travel Tech on React/Next.js framework and Flutter SDK.",
-
-              date: "2020 - 2022",
-              link: "Swimply.com",
-              image: images.aboutImage,
-              skills: ["React", "JavaScript", "CSS", "Reduux", "Flutter"],
-              website: "https://www.google.com",
-            },
-            {
-              title: "FreeLance",
-              content:
-                "Developed the UI and UX eco-system for a conference event platform using modular component structures with JS, SCSS, Gulp on Node.",
-
-              date: "2019 - 2020",
-              link: "",
-              image: images.aboutImage,
-              skills: ["Node.js", "Express", "MongoDB"],
-            },
-            {
-              title: "UL STEP Dept.",
-              content:
-                "Top-Rated developer on Upwork specializing in Front-end (React, WordPress) technologies with a 100% job success rate and client satisfaction rating (based on 150+ Jobs, 2500+ hours).",
-
-              date: "2016 - 2020",
-              link: "step.louisiana.edu",
-              image: images.aboutImage,
-              skills: ["Python", "Django", "PostgreSQL"],
-              website: "https://www.google.com",
-            },
-            // Add more experiences as needed
-          ]}
-        />
+        <ExperienceSection experiences={experiencesData} />
       </AnimatedComponent>
       <AnimatedComponent>
         <ProjectSection />

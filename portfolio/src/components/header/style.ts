@@ -33,7 +33,7 @@ const HeaderContainer = styled.div`
 const HeaderContent = styled.div`
   text-align: center;
   display: flex;
-  margin-top: 150px;
+  margin-top: 100px;
   gap: 25px;
 `;
 

@@ -15,20 +15,20 @@ export default function Header() {
     <HeaderSection>
       <div>
         <HeaderContainer>
-          <Title>Frontend Developer</Title>
+          <Title>Hi I'm Austin! Frontend Developer</Title>
           <Subtitle>
-            I like to craft solid and scalable frontend products with great user
-            experiences.
+            I like to craft solid and responsive frontend products with great
+            user experiences.
           </Subtitle>
         </HeaderContainer>
 
         <HeaderContent>
           <Paragraph>
-            Proven experience building successful products for clients across
-            several countries.
+            Experience in building successful products that focus on users needs
+            across different platforms.
           </Paragraph>
           <Paragraph>
-            Highly skilled at progressive enhancement, design systems & UI
+            Highly skilled at react enhancement, design systems & UI
             Engineering.
           </Paragraph>
         </HeaderContent>

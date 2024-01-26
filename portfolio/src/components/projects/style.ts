@@ -1,4 +1,3 @@
-import { Link } from "@material-ui/core";
 import styled from "styled-components";
 
 const ProjectContainer = styled.section`

@@ -5,7 +5,7 @@ import LanguageIcon from "@mui/icons-material/Language";
 const ExperienceContainer = styled.section`
   background-color: white;
   padding: 8%;
-  background-image: url(${images.experienceBackGround});
+  // background-image: url(${images.experienceBackGround});
   background-size: cover;
   background-position: center;
 `;
@@ -17,7 +17,7 @@ const Title = styled.h1`
   margin-bottom: 10px;
   text-align: center;
 `;
-const SubTitle = styled.h2`
+const SubTitle = styled.h3`
   margin: 10px;
 `;
 
@@ -73,8 +73,13 @@ const SubTitleContainer = styled.div`
 `;
 
 const CompanyLogo = styled.img`
+  background-color: white;
+
   width: 90px;
-  max-width: 100%;
+  border-radius: 30px;
+  padding: 0px 7px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 `;
 
 const SkillContainer = styled.div`
