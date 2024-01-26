@@ -2,9 +2,10 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import NavMenu from "./components/navMenu";
-import Home from "./pages/home";
+import Home, { AnimatedComponent } from "./pages/home";
 import ExperiencePage from "./pages/experience";
 import BioPage from "./pages/bio";
+import Footer from "./components/footer";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -19,5 +20,8 @@ root.render(
         <Route path="/bio" element={<BioPage />}></Route>
       </Routes>
     </Router>
+    <AnimatedComponent>
+      <Footer />
+    </AnimatedComponent>
   </React.StrictMode>
 );

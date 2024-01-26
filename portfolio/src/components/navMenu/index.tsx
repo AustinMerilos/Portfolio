@@ -10,6 +10,7 @@ import {
   MenuButton,
   SocialImage,
   SocialContainer,
+  NavButtonsContainer,
 } from "./styles";
 
 import CloseIcon from "@material-ui/icons/Close";
@@ -88,11 +89,18 @@ const NavMenu = () => {
             animate={isMenuOpen ? "open" : "closed"}
             initial="closed"
           >
-            <motion.div variants={itemVariants} transition={itemTransition}>
-              <CloseButton onClick={handleCloseMenu}>
-                <MenuOpenIcon />
-              </CloseButton>
-            </motion.div>
+            <NavButtonsContainer>
+              <motion.div variants={itemVariants} transition={itemTransition}>
+                <Link href="/" underline="none" color="inherit">
+                  Austin Merilos
+                </Link>
+              </motion.div>
+              <motion.div variants={itemVariants} transition={itemTransition}>
+                <CloseButton onClick={handleCloseMenu}>
+                  <MenuOpenIcon />
+                </CloseButton>
+              </motion.div>
+            </NavButtonsContainer>
 
             <motion.div variants={itemVariants} transition={itemTransition}>
               <ListItem>

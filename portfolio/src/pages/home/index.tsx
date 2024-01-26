@@ -15,7 +15,7 @@ const sectionVariant = {
   hidden: { opacity: 0, y: -50, x: 100, scale: 0.8 },
 };
 
-const AnimatedComponent = ({ children }: any) => {
+export const AnimatedComponent = ({ children }: any) => {
   const controls = useAnimation();
   const [ref, inView] = useInView();
 
@@ -56,10 +56,6 @@ export default function Home() {
       </AnimatedComponent>
       <AnimatedComponent>
         <CurrentlySection />
-      </AnimatedComponent>
-
-      <AnimatedComponent>
-        <Footer />
       </AnimatedComponent>
     </Container>
   );

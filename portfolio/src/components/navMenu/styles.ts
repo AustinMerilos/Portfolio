@@ -18,6 +18,18 @@ const NavContainer = styled.div`
 
   `}
 `;
+const NavButtonsContainer = styled.div`
+  display: flex;
+  gap: 75%;
+  ${media.mobile`
+   
+
+  `}
+  ${media.tablet`
+    
+
+  `}
+`;
 
 const ListContainer = styled(Menu)`
   && {
@@ -84,4 +96,5 @@ export {
   ListContainer,
   ListItem,
   SocialContainer,
+  NavButtonsContainer,
 };
