@@ -1,4 +1,6 @@
 import images from "../../assets";
+import { AnimatedComponent } from "../../utils/animated";
+import { Theme } from "../../utils/themes";
 import {
   ContactLink,
   CopyRight,
@@ -14,41 +16,43 @@ import {
   Title,
 } from "./style";
 
-export default function Footer() {
+export const Footer: React.FC<{ theme: Theme }> = ({ theme }) => {
   const emailAddress = "austin.merilos@gmail";
 
   const handleEmailClick = () => {
     window.location.href = `mailto:${emailAddress}`;
   };
   return (
-    <FooterContainer>
-      <FooterInnerContainer>
-        <FooterItemContainer>
-          <Title>Say Hello</Title>
-          <Email href={`mailto:${emailAddress}`} onClick={handleEmailClick}>
-            austin.merilos@gmail
-          </Email>
-        </FooterItemContainer>
+    <FooterContainer theme={theme}>
+      <AnimatedComponent>
+        <FooterInnerContainer>
+          <FooterItemContainer>
+            <Title>Say Hello</Title>
+            <Email href={`mailto:${emailAddress}`} onClick={handleEmailClick}>
+              austin.merilos@gmail
+            </Email>
+          </FooterItemContainer>
 
-        <FooterItemContainer>
-          <NavLinks>Resume</NavLinks>
-          <NavLinks href="/experience">Experience</NavLinks>
-          <NavLinks>Something</NavLinks>
-        </FooterItemContainer>
-      </FooterInnerContainer>
-      <Divider />
+          <FooterItemContainer>
+            <NavLinks>Resume</NavLinks>
+            <NavLinks href="/experience">Experience</NavLinks>
+            <NavLinks>Something</NavLinks>
+          </FooterItemContainer>
+        </FooterInnerContainer>
+        <Divider />
 
-      <SocialContainer>
-        <CopyRight>© Austin Merilos 2024</CopyRight>
-        <SocialInnerContainer>
-          <ContactLink href="https://www.linkedin.com/in/austinmerilos">
-            <SocialImage src={images.linkedin} />
-          </ContactLink>
-          <ContactLink href="https://github.com/AustinMerilos">
-            <SocialImage src={images.github} />
-          </ContactLink>
-        </SocialInnerContainer>
-      </SocialContainer>
+        <SocialContainer>
+          <CopyRight>© Austin Merilos 2024</CopyRight>
+          <SocialInnerContainer>
+            <ContactLink href="https://www.linkedin.com/in/austinmerilos">
+              <SocialImage src={images.linkedin} />
+            </ContactLink>
+            <ContactLink href="https://github.com/AustinMerilos">
+              <SocialImage src={images.github} />
+            </ContactLink>
+          </SocialInnerContainer>
+        </SocialContainer>
+      </AnimatedComponent>
     </FooterContainer>
   );
-}
+};

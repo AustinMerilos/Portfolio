@@ -1,9 +1,13 @@
 import { Link } from "@material-ui/core";
 import { styled } from "styled-components";
 import media from "../../utils/styleSizes";
+import backgroundImages from "../../assets/backgrounds";
 
-const FooterContainer = styled.section`
-  background-color: #59e4a8;
+const FooterContainer = styled.div`
+  background-image: url(${backgroundImages.footerBackGround});
+  background-size: cover; /* Adjust as needed */
+  background-position: center;
+
   padding: 12rem 19rem;
   ${media.mobile`
    padding: 2rem 0rem;

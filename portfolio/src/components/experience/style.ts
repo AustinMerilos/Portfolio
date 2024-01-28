@@ -1,13 +1,12 @@
 import { Link } from "@material-ui/core";
 import styled from "styled-components";
-import images from "../../assets";
 import LanguageIcon from "@mui/icons-material/Language";
+import backgroundImages from "../../assets/backgrounds";
 const ExperienceContainer = styled.section`
-  background-color: white;
-  padding: 8%;
-  // background-image: url(${images.experienceBackGround});
-  background-size: cover;
+  background-image: url(${backgroundImages.experienceBackGround});
+  background-size: cover; /* Adjust as needed */
   background-position: center;
+  padding: 8%;
 `;
 const ExperineceOutterContainer = styled.section`
   padding: 0 24%;
@@ -19,6 +18,7 @@ const Title = styled.h1`
 `;
 const SubTitle = styled.h3`
   margin: 10px;
+  color: ${(props) => props.theme.colors.lightText};
 `;
 
 const ExpandButton = styled.button`
@@ -33,7 +33,7 @@ const ExpandButton = styled.button`
 `;
 
 const ExperienceInnerContainer = styled.div`
-  background-color: #d5f8e5;
+  background-color: white;
   padding: 10px;
   border-radius: 10px;
 `;
@@ -60,7 +60,9 @@ const GridContainer = styled.div`
   justify-content: space-between;
   align-items: center; /* Center items vertically */
   padding: 5px;
-  background-color: #59e4a8;
+
+  background-color: ${(props) => props.theme.colors.secondary};
+  color: ${(props) => props.theme.colors.darkText};
 
   border-radius: 15px;
   margin-bottom: 15px;

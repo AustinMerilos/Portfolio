@@ -1,44 +1,74 @@
 // themes.ts
-
-import { createGlobalStyle } from "styled-components";
-
-// themes.ts
 export interface Theme {
   colors: {
     primary: string;
     secondary: string;
-    background: string;
-    text: string;
+    lightText: string;
+    darkText: string;
     // Add other color properties as needed
   };
 }
 
+const greenTheme: Theme = {
+  colors: {
+    primary: "#cdf7e5",
+    secondary: "#0c486c",
+    darkText: "black",
+    lightText: "#1abc9c",
+  },
+};
+
+const coralTheme: Theme = {
+  colors: {
+    primary: "#ff9899",
+    secondary: "#0c486c",
+    darkText: "black",
+    lightText: "white",
+  },
+};
+const yellowTheme: Theme = {
+  colors: {
+    primary: "#f4f7cd",
+    secondary: "#2c3e50",
+    darkText: "black",
+    lightText: "#1abc9c",
+  },
+};
+
 const lightTheme: Theme = {
   colors: {
-    primary: "#3498db",
-    secondary: "#2ecc71",
-    background: "#ecf0f1",
-    text: "#333",
+    primary: "#ecf0f1",
+    secondary: "#1693a5",
+    darkText: "#2c3e50",
+    lightText: "#ecf0f1",
   },
 };
 
+// Additional theme 1
 const darkTheme: Theme = {
   colors: {
-    primary: "#1abc9c",
-    secondary: "#e74c3c",
-    background: "#2c3e50",
-    text: "#ecf0f1",
-    // Add other color properties for the dark theme
+    primary: "#0c486c",
+    secondary: "#f4f7cd",
+    darkText: "#ecf0f1",
+    lightText: "#333",
+    // Add other color properties for theme1
+  },
+};
+const lightBlueTheme: Theme = {
+  colors: {
+    primary: "#1693a5",
+    secondary: "#f4f7cd",
+    darkText: "#ecf0f1",
+    lightText: "#333",
+    // Add other color properties for theme1
   },
 };
 
-const GlobalStyle = createGlobalStyle`
-  body {
-    background-color: ${(props) => props.theme.colors.background};
-    color: ${(props) => props.theme.colors.text};
-    font-size: ${(props) => props.theme.fontSizes.medium};
-    
-  }
-`;
-
-export { lightTheme, darkTheme, GlobalStyle };
+export {
+  lightTheme,
+  darkTheme,
+  greenTheme,
+  coralTheme,
+  yellowTheme,
+  lightBlueTheme,
+};

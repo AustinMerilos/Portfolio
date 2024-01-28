@@ -1,7 +1,11 @@
 import styled from "styled-components";
+import backgroundImages from "../../assets/backgrounds";
 
 const ProjectContainer = styled.section`
-  background-color: #d5f8e5;
+  background-image: url(${backgroundImages.projectsBackGround});
+  background-size: cover; /* Adjust as needed */
+  background-position: center;
+
   padding: 3% 5%;
 `;
 

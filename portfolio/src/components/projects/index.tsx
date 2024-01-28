@@ -1,4 +1,6 @@
 import images from "../../assets";
+import { AnimatedComponent } from "../../utils/animated";
+import { Theme } from "../../utils/themes";
 import { projectData } from "./constants";
 import SingleProject from "./singleProject";
 import {
@@ -10,33 +12,40 @@ import {
   Title,
 } from "./style";
 
-export function ProjectSection() {
+export const ProjectSection: React.FC<{ theme: Theme }> = ({ theme }) => {
   return (
-    <ProjectContainer>
-      <Title>Projects</Title>
-      <ProjectInnerGrid>
-        {projectData.map((project, index) => (
-          <SingleProject
-            key={index}
-            title={project.title}
-            description={project.description}
-            image={project.image}
-            source={project.source}
-            liveSource={project.liveSource}
-          />
-        ))}
-        <BlurOverlayContainer>
-          <BlurOverlay>
+    <ProjectContainer theme={theme}>
+      <AnimatedComponent>
+        <Title>Projects</Title>
+        <ProjectInnerGrid>
+          {projectData.map((project, index) => (
             <SingleProject
-              title="This project was completed as a code challenge in the interview process for a job. It's built with React & Next.js, it connects to the Guardian API to search for articles and the styling is done with Tailwind CSS"
-              description=""
-              image={images.upcomingProject}
-              source=""
+              theme={theme}
+              key={index}
+              title={project.title}
+              description={project.description}
+              image={project.image}
+              source={project.source}
+              liveSource={project.liveSource}
             />
-          </BlurOverlay>
-          <TextOverlay>Coming soon</TextOverlay>
-        </BlurOverlayContainer>
-      </ProjectInnerGrid>
+          ))}
+          <AnimatedComponent>
+            <BlurOverlayContainer>
+              <BlurOverlay>
+                <SingleProject
+                  theme={theme}
+                  title="This project was completed as a code challenge in the interview process for a job. It's built with React & Next.js, it connects to the Guardian API to search for articles and the styling is done with Tailwind CSS"
+                  description=""
+                  image={images.upcomingProject}
+                  source=""
+                />
+              </BlurOverlay>
+
+              <TextOverlay>Coming soon</TextOverlay>
+            </BlurOverlayContainer>
+          </AnimatedComponent>
+        </ProjectInnerGrid>
+      </AnimatedComponent>
     </ProjectContainer>
   );
-}
+};

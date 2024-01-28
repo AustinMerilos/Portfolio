@@ -1,19 +1,37 @@
-import React, { createContext, useContext, useState, ReactNode } from "react";
+// ThemeContext.js
+import React, { createContext, useContext, useState } from "react";
+import {
+  Theme,
+  darkTheme,
+  lightTheme,
+  greenTheme,
+  coralTheme,
+  yellowTheme,
+  lightBlueTheme,
+} from "./themes"; // Import your Theme interface
 
-interface ThemeContextProps {
-  theme: string;
-  toggleTheme: () => void;
-}
+// themeContext.tsx
+const ThemeContext = createContext<
+  { theme: Theme; toggleTheme: () => void } | undefined
+>(undefined);
 
-const ThemeContext = createContext<ThemeContextProps | undefined>(undefined);
+const themes = [
+  lightTheme,
+  darkTheme,
+  greenTheme,
+  coralTheme,
+  yellowTheme,
+  lightBlueTheme,
+];
 
-export const ThemeProvider: React.FC<{ children: ReactNode }> = ({
+export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({
   children,
 }) => {
-  const [theme, setTheme] = useState("light");
+  const [themeIndex, setThemeIndex] = useState<number>(0);
+  const theme = themes[themeIndex];
 
   const toggleTheme = () => {
-    setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
+    setThemeIndex((prevIndex) => (prevIndex + 1) % themes.length);
   };
 
   return (
@@ -25,8 +43,10 @@ export const ThemeProvider: React.FC<{ children: ReactNode }> = ({
 
 export const useTheme = () => {
   const context = useContext(ThemeContext);
+
   if (!context) {
     throw new Error("useTheme must be used within a ThemeProvider");
   }
+
   return context;
 };

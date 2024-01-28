@@ -1,15 +1,22 @@
 import { Link } from "@material-ui/core";
 import styled from "styled-components";
-import media from "../../utils/styleSizes";
+import InlineSVG from "react-inlinesvg";
+import backgroundImages from "../../assets/backgrounds";
 
 const AboutContainer = styled.section`
-  background-color: #59e4a8;
-  padding: 5%;
-  // clip-path: polygon(4% 1%, 100% 49%, 84% 100%, 0 85%);
+  background-image: url(${backgroundImages.aboutBackGround});
+  background-size: cover; /* Adjust as needed */
+  background-position: center;
 `;
-const Image = styled.img`
+const Container = styled.section`
+  display: flex;
+`;
+const Image = styled(InlineSVG)`
   max-width: 35%;
-  height: auto;
+  path {
+    fill: ${(props) => props.theme.colors.secondary};
+    stroke: ${(props) => props.theme.colors.primary};
+  }
 `;
 
 const InnerContainer = styled.div`
@@ -18,6 +25,7 @@ const InnerContainer = styled.div`
 const Title = styled.h1`
   font-size: 2.5em;
   margin-bottom: 10px;
+  text-shadow: 1px 1px 2px black;
 `;
 const GridContainer = styled.div`
   display: flex;
@@ -45,9 +53,11 @@ const BioContainer = styled.div`
 `;
 const SubBioTitle = styled.h2`
   margin-bottom: 5px;
+  text-shadow: 1px 1px 2px black;
 `;
 const SubBio = styled.p`
   margin-bottom: 5px;
+  text-shadow: 1px 1px 2px black;
 `;
 const ReadMore = styled(Link)`
   && {
@@ -67,4 +77,5 @@ export {
   GridContainer,
   Image,
   InnerContainer,
+  Container,
 };

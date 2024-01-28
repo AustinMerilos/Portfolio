@@ -1,12 +1,13 @@
 import styled from "styled-components";
-import images from "../../assets";
+import InlineSVG from "react-inlinesvg";
+import backgroundImages from "../../assets/backgrounds";
 
 const CurrentlyContainer = styled.section`
-  background-color: white;
-  padding: 5%;
-  background-image: url(${images.currentBackGround});
+  background-image: url(${backgroundImages.currentBackGround});
   background-size: cover; /* Adjust as needed */
   background-position: center;
+
+  padding: 5%;
 `;
 const CurrentlyContainerInnerContainer = styled.div`
   padding: 5%;
@@ -21,11 +22,18 @@ const Title = styled.h1`
   margin-bottom: 10px;
 `;
 const SubTitle = styled.p`
-  font-size: 1.07em;
+  font-size: 1.1em;
+  color: ${(props) => props.theme.colors.darkText};
+  text-shadow: 1px 1px 1px black;
 `;
-const Image = styled.img`
+
+const Image = styled(InlineSVG)`
   max-width: 55%;
   height: auto;
+  path {
+    fill: ${(props) => props.theme.colors.secondary};
+    stroke: ${(props) => props.theme.colors.primary};
+  }
 `;
 
 export {

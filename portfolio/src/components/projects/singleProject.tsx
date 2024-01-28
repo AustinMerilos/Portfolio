@@ -1,3 +1,5 @@
+import { AnimatedComponent } from "../../utils/animated";
+import { Theme } from "../../utils/themes";
 import {
   ProjectDescription,
   ProjectImage,
@@ -13,6 +15,7 @@ type SingleProjectItems = {
   description?: string;
   source: string;
   liveSource?: string;
+  theme: Theme;
 };
 
 export default function SingleProject({
@@ -21,16 +24,21 @@ export default function SingleProject({
   description,
   source,
   liveSource,
+  theme,
 }: SingleProjectItems) {
   return (
-    <SingleProjectContainer>
-      <ProjectImage src={image} />
-      <ProjectTitle>{title}</ProjectTitle>
-      <ProjectDescription>{description}</ProjectDescription>
-      <ProjectLinkGrid>
-        {source && <ProjectLinks href={source}>GitHub</ProjectLinks>}
-        {liveSource && <ProjectLinks href={liveSource}>Live Demo</ProjectLinks>}
-      </ProjectLinkGrid>
-    </SingleProjectContainer>
+    <AnimatedComponent>
+      <SingleProjectContainer>
+        <ProjectImage src={image} />
+        <ProjectTitle>{title}</ProjectTitle>
+        <ProjectDescription theme={theme}>{description}</ProjectDescription>
+        <ProjectLinkGrid>
+          {source && <ProjectLinks href={source}>GitHub</ProjectLinks>}
+          {liveSource && (
+            <ProjectLinks href={liveSource}>Live Demo</ProjectLinks>
+          )}
+        </ProjectLinkGrid>
+      </SingleProjectContainer>
+    </AnimatedComponent>
   );
 }

@@ -1,13 +1,12 @@
 import { styled } from "styled-components";
-import images from "../../assets";
 import media from "../../utils/styleSizes";
+import backgroundImages from "../../assets/backgrounds";
 
 const HeaderSection = styled.section`
-  background-color: white;
   padding: 12rem;
   display: flex;
   gap: 300px;
-  background-image: url(${images.headerBackGround});
+  background-image: url(${backgroundImages.headerBackGround});
   background-size: cover; /* Adjust as needed */
   background-position: center;
 
@@ -24,6 +23,7 @@ const HeaderSection = styled.section`
   `}
 `;
 
+const Container = styled.div``;
 const HeaderContainer = styled.div`
   max-width: 800px;
   margin: 0 auto;
@@ -35,10 +35,13 @@ const HeaderContent = styled.div`
   display: flex;
   margin-top: 100px;
   gap: 25px;
+  text-shadow: 1px 1px 2px black;
 `;
 
 const Title = styled.h1`
   font-size: 3.5em;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #2c3e50;
 
   margin-bottom: 10px;
 `;
@@ -51,10 +54,11 @@ const Subtitle = styled.p`
 const Paragraph = styled.p`
   font-size: 1em;
 `;
+
 const HeadShot = styled.img`
-  width: 350px;
-  height: fit-content;
   border-radius: 180px;
+  height: fit-content;
+  width: 350px;
 `;
 
 export {
@@ -65,4 +69,5 @@ export {
   Subtitle,
   Paragraph,
   HeadShot,
+  Container,
 };
