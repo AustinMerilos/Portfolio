@@ -17,12 +17,8 @@ export default function Home() {
       <Header theme={theme} />
       <AboutSection theme={theme} />
       <ExperienceSection theme={theme} experiences={experiencesData} />
-
       <ProjectSection theme={theme} />
-
       <CurrentlySection theme={theme} />
-
-      <Footer theme={theme} />
     </Container>
   );
 }

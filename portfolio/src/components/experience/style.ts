@@ -1,24 +1,41 @@
 import { Link } from "@material-ui/core";
 import styled from "styled-components";
 import LanguageIcon from "@mui/icons-material/Language";
-import backgroundImages from "../../assets/backgrounds";
 const ExperienceContainer = styled.section`
-  background-image: url(${backgroundImages.experienceBackGround});
-  background-size: cover; /* Adjust as needed */
-  background-position: center;
   padding: 8%;
 `;
 const ExperineceOutterContainer = styled.section`
   padding: 0 24%;
 `;
+
 const Title = styled.h1`
+  position: relative;
   font-size: 2.5em;
   margin-bottom: 10px;
   text-align: center;
+  color: ${(props) => props.theme.colors.title};
+  text-shadow: 1px 0.5px 1px ${(props) => props.theme.colors.titleOutline};
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    bottom: 0;
+    background-color: ${(props) => props.theme.colors.secondary};
+    z-index: -1;
+    transition: top 0.3s ease;
+
+    top: 100%;
+  }
+
+  &:hover::after {
+    top: 50%;
+  }
 `;
 const SubTitle = styled.h3`
   margin: 10px;
-  color: ${(props) => props.theme.colors.lightText};
+  color: ${(props) => props.theme.colors.secondTitle};
 `;
 
 const ExpandButton = styled.button`
@@ -26,9 +43,9 @@ const ExpandButton = styled.button`
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border: 4px solid white;
+  border: 4px solid;
   background-color: transparent;
-  color: white;
+  color: ${(props) => props.theme.colors.button};
   font-size: 25px;
 `;
 
@@ -58,7 +75,7 @@ const Description = styled.p`
 const GridContainer = styled.div`
   display: flex;
   justify-content: space-between;
-  align-items: center; /* Center items vertically */
+  align-items: center;
   padding: 5px;
 
   background-color: ${(props) => props.theme.colors.secondary};
@@ -93,7 +110,7 @@ const SkillContainer = styled.div`
 `;
 
 const SkillItem = styled.p`
-  background-color: #1b2e35;
+  background-color: ${(props) => props.theme.colors.title};
   color: white;
   padding: 6px;
   border-radius: 8px;

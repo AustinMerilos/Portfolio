@@ -2,16 +2,33 @@ import styled from "styled-components";
 import backgroundImages from "../../assets/backgrounds";
 
 const ProjectContainer = styled.section`
-  background-image: url(${backgroundImages.projectsBackGround});
-  background-size: cover; /* Adjust as needed */
-  background-position: center;
-
   padding: 3% 5%;
 `;
 
 const Title = styled.h1`
+  position: relative;
   font-size: 2.5em;
   margin: 10px;
+  color: ${(props) => props.theme.colors.title};
+  text-shadow: 1px 0.5px 1px ${(props) => props.theme.colors.secondary};
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0%;
+    right: 88%;
+    bottom: 0;
+    background-color: ${(props) => props.theme.colors.secondary};
+    z-index: -1;
+    transition: top 0.3s ease; /* Add a transition for the top property */
+
+    top: 100%;
+  }
+
+  &:hover::after {
+    /* On hover, change the top position to 0 to reveal the entire background */
+    top: 50%;
+  }
 `;
 const ProjectInnerGrid = styled.div`
   display: grid;
@@ -23,6 +40,9 @@ const ProjectInnerGrid = styled.div`
 const SingleProjectContainer = styled.div`
   background-color: white;
   border-radius: 20px;
+  //box-shadow: 12px 12px 2px 1px ${(props) => props.theme.colors.secondary};
+  border: solid 1.5px ${(props) => props.theme.colors.secondary};
+
   padding: 5%;
   contain: content;
   display: flex;
@@ -39,9 +59,11 @@ const ProjectImage = styled.img`
 
 const ProjectTitle = styled.h1`
   margin-bottom: 10px;
+  color: ${(props) => props.theme.colors.title};
+  text-shadow: 1px 0.5px 1px ${(props) => props.theme.colors.titleOutline};
 `;
 const ProjectDescription = styled.p`
-  margin-bottom: 5px;
+  margin-bottom: 25px;
 `;
 
 const ProjectLinkGrid = styled.div`
@@ -54,6 +76,7 @@ const ProjectLinks = styled.a`
   && {
     background-color: #1b2e35;
     color: white;
+    margin-bottom: 25px;
     padding: 6px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -62,7 +85,7 @@ const ProjectLinks = styled.a`
     cursor: pointer;
     &:hover {
       transform: scale(1.2);
-      background-color: #59e4a8;
+      background-color: ${(props) => props.theme.colors.secondary};
       color: black;
     }
   }

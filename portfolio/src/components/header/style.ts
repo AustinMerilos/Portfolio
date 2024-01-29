@@ -1,13 +1,13 @@
 import { styled } from "styled-components";
 import media from "../../utils/styleSizes";
-import backgroundImages from "../../assets/backgrounds";
 
 const HeaderSection = styled.section`
-  padding: 12rem;
+  padding: 10rem;
   display: flex;
   gap: 300px;
-  background-image: url(${backgroundImages.headerBackGround});
-  background-size: cover; /* Adjust as needed */
+
+  background-image: url(${(props) => props.theme.colors.background});
+  background-size: cover;
   background-position: center;
 
   ${media.mobile`
@@ -23,7 +23,6 @@ const HeaderSection = styled.section`
   `}
 `;
 
-const Container = styled.div``;
 const HeaderContainer = styled.div`
   max-width: 800px;
   margin: 0 auto;
@@ -35,24 +34,46 @@ const HeaderContent = styled.div`
   display: flex;
   margin-top: 100px;
   gap: 25px;
-  text-shadow: 1px 1px 2px black;
+`;
+const Name = styled.div`
+  font-size: 4.5em;
+  color: ${(props) => props.theme.colors.title};
+  text-shadow: 1px 0.5px 1px ${(props) => props.theme.colors.titleOutline};
 `;
 
 const Title = styled.h1`
-  font-size: 3.5em;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #2c3e50;
+  position: relative;
+  font-size: 4.5em;
+  margin: 10px;
+  color: ${(props) => props.theme.colors.title};
+  text-shadow: 1px 0.5px 1px ${(props) => props.theme.colors.titleOutline};
 
-  margin-bottom: 10px;
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0%;
+    right: 40%;
+    bottom: 0;
+    background-color: ${(props) => props.theme.colors.secondary};
+    z-index: -1;
+    transition: top 0.3s ease;
+    top: 100%;
+  }
+
+  &:hover::after {
+    top: 60%;
+  }
 `;
 
 const Subtitle = styled.p`
   font-size: 1.5em;
   margin-bottom: 20px;
+  color: ${(props) => props.theme.colors.text};
 `;
 
 const Paragraph = styled.p`
   font-size: 1em;
+  color: ${(props) => props.theme.colors.text};
 `;
 
 const HeadShot = styled.img`
@@ -69,5 +90,5 @@ export {
   Subtitle,
   Paragraph,
   HeadShot,
-  Container,
+  Name,
 };

@@ -28,14 +28,20 @@ export default function SingleProject({
 }: SingleProjectItems) {
   return (
     <AnimatedComponent>
-      <SingleProjectContainer>
+      <SingleProjectContainer theme={theme}>
         <ProjectImage src={image} />
-        <ProjectTitle>{title}</ProjectTitle>
+        <ProjectTitle theme={theme}>{title}</ProjectTitle>
         <ProjectDescription theme={theme}>{description}</ProjectDescription>
         <ProjectLinkGrid>
-          {source && <ProjectLinks href={source}>GitHub</ProjectLinks>}
+          {source && (
+            <ProjectLinks href={source} theme={theme}>
+              GitHub
+            </ProjectLinks>
+          )}
           {liveSource && (
-            <ProjectLinks href={liveSource}>Live Demo</ProjectLinks>
+            <ProjectLinks href={liveSource} theme={theme}>
+              Live Demo
+            </ProjectLinks>
           )}
         </ProjectLinkGrid>
       </SingleProjectContainer>

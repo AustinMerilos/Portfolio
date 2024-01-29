@@ -1,21 +1,15 @@
 import { Link } from "@material-ui/core";
 import styled from "styled-components";
 import InlineSVG from "react-inlinesvg";
-import backgroundImages from "../../assets/backgrounds";
 
 const AboutContainer = styled.section`
-  background-image: url(${backgroundImages.aboutBackGround});
-  background-size: cover; /* Adjust as needed */
-  background-position: center;
-`;
-const Container = styled.section`
   display: flex;
 `;
 const Image = styled(InlineSVG)`
   max-width: 35%;
   path {
-    fill: ${(props) => props.theme.colors.secondary};
-    stroke: ${(props) => props.theme.colors.primary};
+    fill: ${(props) => props.theme.colors.primary};
+    stroke: ${(props) => props.theme.colors.secondary};
   }
 `;
 
@@ -23,23 +17,43 @@ const InnerContainer = styled.div`
   display: inline-block;
 `;
 const Title = styled.h1`
+  position: relative;
   font-size: 2.5em;
-  margin-bottom: 10px;
-  text-shadow: 1px 1px 2px black;
+  margin: 25px;
+  display: inline-block;
+  color: ${(props) => props.theme.colors.title};
+  text-shadow: 1px 0.5px 1px ${(props) => props.theme.colors.titleOutline};
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: ${(props) => props.theme.colors.secondary};
+    z-index: -1;
+    transition: top 0.3s ease;
+
+    top: 100%;
+  }
+
+  &:hover::after {
+    top: 50%;
+  }
 `;
 const GridContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  gap: 8px; /* Reduced the gap */
+  gap: 8px;
   padding: 16px;
-  justify-content: center; /* Center items horizontally */
+  justify-content: center;
   max-width: 475px;
 `;
 
 const SkillItem = styled.p`
-  background-color: #1b2e35;
-  color: white;
+  background-color: ${(props) => props.theme.colors.secondary};
+  color: ${(props) => props.theme.colors.secondTitle};
   padding: 16px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -47,17 +61,16 @@ const SkillItem = styled.p`
   max-width: 140px;
 `;
 const BioContainer = styled.div`
+  color: ${(props) => props.theme.colors.text};
   margin: 10px;
   padding: 15px;
   max-width: 700px;
 `;
 const SubBioTitle = styled.h2`
   margin-bottom: 5px;
-  text-shadow: 1px 1px 2px black;
 `;
 const SubBio = styled.p`
   margin-bottom: 5px;
-  text-shadow: 1px 1px 2px black;
 `;
 const ReadMore = styled(Link)`
   && {
@@ -77,5 +90,4 @@ export {
   GridContainer,
   Image,
   InnerContainer,
-  Container,
 };

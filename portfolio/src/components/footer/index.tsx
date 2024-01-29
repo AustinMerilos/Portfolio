@@ -1,5 +1,6 @@
 import images from "../../assets";
 import { AnimatedComponent } from "../../utils/animated";
+import { useTheme } from "../../utils/themeContext";
 import { Theme } from "../../utils/themes";
 import {
   ContactLink,
@@ -16,7 +17,8 @@ import {
   Title,
 } from "./style";
 
-export const Footer: React.FC<{ theme: Theme }> = ({ theme }) => {
+export const Footer = () => {
+  const { theme } = useTheme();
   const emailAddress = "austin.merilos@gmail";
 
   const handleEmailClick = () => {
@@ -26,14 +28,14 @@ export const Footer: React.FC<{ theme: Theme }> = ({ theme }) => {
     <FooterContainer theme={theme}>
       <AnimatedComponent>
         <FooterInnerContainer>
-          <FooterItemContainer>
+          <FooterItemContainer theme={theme}>
             <Title>Say Hello</Title>
             <Email href={`mailto:${emailAddress}`} onClick={handleEmailClick}>
               austin.merilos@gmail
             </Email>
           </FooterItemContainer>
 
-          <FooterItemContainer>
+          <FooterItemContainer theme={theme}>
             <NavLinks>Resume</NavLinks>
             <NavLinks href="/experience">Experience</NavLinks>
             <NavLinks>Something</NavLinks>

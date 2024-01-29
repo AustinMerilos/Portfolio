@@ -10,10 +10,10 @@ import {
   GridContainer,
   Image,
   InnerContainer,
-  Container,
 } from "./style";
 import { Theme } from "../../utils/themes";
 import { AnimatedComponent } from "../../utils/animated";
+import { motion } from "framer-motion";
 
 const skillData = [
   { id: 1, name: "JavaScript" },
@@ -36,21 +36,28 @@ const skillData = [
 
 export const AboutSection: React.FC<{ theme: Theme }> = ({ theme }) => {
   return (
-    <AboutContainer theme={theme}>
+    <div>
       <AnimatedComponent>
-        <Container>
-          <Title>My Skills</Title>
-          <Image src={images.aboutImage} theme={theme}>
-            <path d="m801.55 413.6h15.47v54.22h-15.47z"></path>
-          </Image>
+        <AboutContainer>
+          <div>
+            <motion.div
+              whileHover={{ scale: 1.1 }}
+              transition={{ duration: 0.3 }}
+            >
+              <Title theme={theme}> My Skills</Title>
+            </motion.div>
+          </div>
+          <Image src={images.aboutImage} theme={theme}></Image>
           <InnerContainer>
             <GridContainer>
               {skillData.map((skill) => (
-                <SkillItem key={skill.id}>{skill.name}</SkillItem>
+                <SkillItem key={skill.id} theme={theme}>
+                  {skill.name}
+                </SkillItem>
               ))}
             </GridContainer>
 
-            <BioContainer>
+            <BioContainer theme={theme}>
               <SubBioTitle>A little about me</SubBioTitle>
               <SubBio>
                 Software Engineer with a demonstrated history of working with
@@ -63,9 +70,9 @@ export const AboutSection: React.FC<{ theme: Theme }> = ({ theme }) => {
               </SubBio>
               <ReadMore href="/bio">Read more</ReadMore>
             </BioContainer>
-          </InnerContainer>
-        </Container>
+          </InnerContainer>{" "}
+        </AboutContainer>
       </AnimatedComponent>
-    </AboutContainer>
+    </div>
   );
 };

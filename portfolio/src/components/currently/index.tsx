@@ -10,6 +10,7 @@ import {
 import images from "../../assets";
 import { Theme } from "../../utils/themes";
 import { AnimatedComponent } from "../../utils/animated";
+import { motion } from "framer-motion";
 
 const CurrentlySection: React.FC<{ theme: Theme }> = ({ theme }) => {
   return (
@@ -17,7 +18,12 @@ const CurrentlySection: React.FC<{ theme: Theme }> = ({ theme }) => {
       <AnimatedComponent>
         <CurrentlyContainerInnerContainer>
           <TextContainer>
-            <Title>Currently working on:</Title>
+            <motion.div
+              whileHover={{ scale: 1.1 }}
+              transition={{ duration: 0.3 }}
+            >
+              <Title theme={theme}>Currently working on:</Title>
+            </motion.div>
             <SubTitle theme={theme}>
               I've built products for companies and businesses around the globe
               ranging from marketing websites to complex solutions and

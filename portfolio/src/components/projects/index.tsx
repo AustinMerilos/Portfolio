@@ -3,6 +3,8 @@ import { AnimatedComponent } from "../../utils/animated";
 import { Theme } from "../../utils/themes";
 import { projectData } from "./constants";
 import SingleProject from "./singleProject";
+import { motion } from "framer-motion";
+
 import {
   BlurOverlay,
   BlurOverlayContainer,
@@ -16,7 +18,12 @@ export const ProjectSection: React.FC<{ theme: Theme }> = ({ theme }) => {
   return (
     <ProjectContainer theme={theme}>
       <AnimatedComponent>
-        <Title>Projects</Title>
+        <motion.div whileHover={{ scale: 1.1 }} transition={{ duration: 0.3 }}>
+          <div>
+            <Title theme={theme}>Projects</Title>
+          </div>
+        </motion.div>
+
         <ProjectInnerGrid>
           {projectData.map((project, index) => (
             <SingleProject

@@ -1,4 +1,6 @@
 import { Menu, MenuItem, IconButton } from "@material-ui/core";
+import MenuOpenIcon from "@mui/icons-material/MenuOpen";
+
 import MenuIcon from "@material-ui/icons/Menu";
 import styled from "styled-components";
 import media from "../../utils/styleSizes";
@@ -20,7 +22,7 @@ const NavContainer = styled.div`
 `;
 const NavButtonsContainer = styled.div`
   display: flex;
-  gap: 75%;
+  gap: 53%;
   ${media.mobile`
    
 
@@ -53,20 +55,30 @@ const NavButton = styled(IconButton)`
     margin-left: auto;
     display: flex;
     justify-content: flex-end;
+    background-color: ${(props) => props.theme.colors.title};
   }
 `;
 const MenuButton = styled(MenuIcon)`
   && {
     width: 50px;
     height: 50px;
-    color: #1b2e35;
+    color: ${(props) => props.theme.colors.secondTitle};
   }
 `;
+
 const CloseButton = styled(IconButton)`
   && {
     margin-left: auto;
     display: flex;
     justify-content: flex-end;
+  }
+`;
+
+const MenuOpenedButton = styled(MenuOpenIcon)`
+  && {
+    width: 50px;
+    height: 50px;
+    color: ${(props) => props.theme.colors.text};
   }
 `;
 
@@ -97,4 +109,5 @@ export {
   ListItem,
   SocialContainer,
   NavButtonsContainer,
+  MenuOpenedButton,
 };

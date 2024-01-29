@@ -11,14 +11,18 @@ import {
   SocialImage,
   SocialContainer,
   NavButtonsContainer,
+  MenuOpenedButton,
 } from "./styles";
 
 import CloseIcon from "@material-ui/icons/Close";
 import MenuOpenIcon from "@mui/icons-material/MenuOpen";
 import { motion } from "framer-motion";
 import images from "../../assets";
+import { Theme } from "../../utils/themes";
+import { useTheme } from "../../utils/themeContext";
 
 const NavMenu = () => {
+  const { theme } = useTheme();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
@@ -71,9 +75,9 @@ const NavMenu = () => {
 
   return (
     <>
-      <NavContainer>
-        <NavButton onClick={() => setIsMenuOpen((open) => !open)}>
-          <MenuButton />
+      <NavContainer theme={theme}>
+        <NavButton onClick={() => setIsMenuOpen((open) => !open)} theme={theme}>
+          <MenuButton theme={theme} />
         </NavButton>
       </NavContainer>
 
@@ -89,19 +93,19 @@ const NavMenu = () => {
             animate={isMenuOpen ? "open" : "closed"}
             initial="closed"
           >
-            <NavButtonsContainer>
-              <motion.div variants={itemVariants} transition={itemTransition}>
+            <motion.div variants={itemVariants} transition={itemTransition}>
+              <CloseButton onClick={handleCloseMenu}>
+                <MenuOpenedButton theme={theme} />
+              </CloseButton>
+            </motion.div>
+
+            <motion.div variants={itemVariants} transition={itemTransition}>
+              <ListItem>
                 <Link href="/" underline="none" color="inherit">
                   Austin Merilos
                 </Link>
-              </motion.div>
-              <motion.div variants={itemVariants} transition={itemTransition}>
-                <CloseButton onClick={handleCloseMenu}>
-                  <MenuOpenIcon />
-                </CloseButton>
-              </motion.div>
-            </NavButtonsContainer>
-
+              </ListItem>
+            </motion.div>
             <motion.div variants={itemVariants} transition={itemTransition}>
               <ListItem>
                 <Link href="/" underline="none" color="inherit">

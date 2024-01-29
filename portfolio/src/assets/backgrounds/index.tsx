@@ -1,17 +1,21 @@
-import headerBackGround from "./headerBackGround.svg";
-import experienceBackGround from "./experienceBackGround.svg";
 import footerBackGround from "./footerBackground.svg";
-import currentBackGround from "./currentBackground.svg";
-import aboutBackGround from "./aboutBackGround.svg";
-import projectsBackGround from "./projectsBackGround.svg";
+
+import yellowBackgGround from "./yellowBackground.svg";
+import whiteBackGround from "./whiteBackground.svg";
+import greenBackGround from "./greenBackGround.svg";
+import blackBackGround from "./blackBackGround.svg";
+import lightBlueBackGround from "./lightBlueBackGround.svg";
+import khakiBackGround from "./khakiBackGround.svg";
 
 const backgroundImages = {
-  headerBackGround,
-  experienceBackGround,
-  currentBackGround,
-  projectsBackGround,
-  aboutBackGround,
   footerBackGround,
+
+  yellowBackgGround,
+  whiteBackGround,
+  greenBackGround,
+  blackBackGround,
+  lightBlueBackGround,
+  khakiBackGround,
 };
 
 export default backgroundImages;

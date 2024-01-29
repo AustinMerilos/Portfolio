@@ -30,16 +30,30 @@ const ExperienceSection = ({ experiences, theme }: any) => {
     <ExperienceContainer theme={theme}>
       <AnimatedComponent>
         <ExperineceOutterContainer>
-          <Title theme={theme}>Professional Experience</Title>
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            transition={{ duration: 0.3 }}
+          >
+            <Title theme={theme}>Professional Experience</Title>
+          </motion.div>
+
           {experiences.map((experience: any, index: number) => (
             <div key={index}>
               <GridContainer theme={theme}>
                 <SubTitle theme={theme}>{experience.title}</SubTitle>
                 <SubTitleContainer>
                   <SubTitle theme={theme}>{experience.date}</SubTitle>
-                  <ExpandButton onClick={() => handleButtonClick(index)}>
-                    {expandedItem === index ? "-" : "+"}
-                  </ExpandButton>
+                  <motion.div
+                    whileHover={{ scale: 1.1 }}
+                    transition={{ duration: 0.3 }}
+                  >
+                    <ExpandButton
+                      onClick={() => handleButtonClick(index)}
+                      theme={theme}
+                    >
+                      {expandedItem === index ? "-" : "+"}
+                    </ExpandButton>
+                  </motion.div>
                 </SubTitleContainer>
               </GridContainer>
 
@@ -67,7 +81,9 @@ const ExperienceSection = ({ experiences, theme }: any) => {
                                 <SkillContainer>
                                   {experience.skills.map(
                                     (skill: string, j: number) => (
-                                      <SkillItem key={j}>{skill}</SkillItem>
+                                      <SkillItem key={j} theme={theme}>
+                                        {skill}
+                                      </SkillItem>
                                     )
                                   )}
                                 </SkillContainer>

@@ -4,7 +4,8 @@ import media from "../../utils/styleSizes";
 import backgroundImages from "../../assets/backgrounds";
 
 const FooterContainer = styled.div`
-  background-image: url(${backgroundImages.footerBackGround});
+  background-color: ${(props) => props.theme.colors.secondary};
+  //background-image: url(${backgroundImages.footerBackGround});
   background-size: cover; /* Adjust as needed */
   background-position: center;
 
@@ -38,6 +39,7 @@ const FooterItemContainer = styled.div`
   font-size: 1.1em;
   display: grid;
   cursor: pointer;
+  color: ${(props) => props.theme.colors.text};
 `;
 
 const NavLinks = styled(Link)`

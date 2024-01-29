@@ -1,16 +1,14 @@
-// ThemeContext.js
 import React, { createContext, useContext, useState } from "react";
 import {
   Theme,
   darkTheme,
   lightTheme,
   greenTheme,
-  coralTheme,
+  khakieTheme,
   yellowTheme,
   lightBlueTheme,
-} from "./themes"; // Import your Theme interface
+} from "./themes";
 
-// themeContext.tsx
 const ThemeContext = createContext<
   { theme: Theme; toggleTheme: () => void } | undefined
 >(undefined);
@@ -19,7 +17,7 @@ const themes = [
   lightTheme,
   darkTheme,
   greenTheme,
-  coralTheme,
+  khakieTheme,
   yellowTheme,
   lightBlueTheme,
 ];

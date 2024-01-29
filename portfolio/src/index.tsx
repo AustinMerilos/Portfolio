@@ -6,6 +6,7 @@ import Home from "./pages/home";
 import ExperiencePage from "./pages/experience";
 import BioPage from "./pages/bio";
 import { ThemeProvider } from "./utils/themeContext";
+import { Footer } from "./components/footer";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -21,6 +22,7 @@ root.render(
           <Route path="/bio" element={<BioPage />}></Route>
         </Routes>
       </Router>
+      <Footer />
     </ThemeProvider>
   </React.StrictMode>
 );
