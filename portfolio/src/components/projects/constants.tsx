@@ -11,8 +11,7 @@ export const projectData = [
   },
   {
     title: "LiteraryLane",
-    description:
-      "Completed this project for the Wes Bos's Fullstack Advanced React and GraphQL. It uses GraphQL API with Node.js on the backend and Next.Js with React and Apollo on the front end, I also added a few of my own styles and components for this online book store.",
+    description: `Completed this project for the Wes Bos's Fullstack Advanced React & GraphQL. It uses GraphQL API with Node.js on the backend and Next.Js with React & Apollo on the front end, I also added a few of my own styles and components for this online book store.`,
     image: images.literaryLane,
     source: "https://github.com/AustinMerilos/LiteraryLane",
   },

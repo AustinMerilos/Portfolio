@@ -8,7 +8,7 @@ import {
   greenTheme,
   khakieTheme,
   yellowTheme,
-  lightBlueTheme,
+  pinkTheme,
 } from "./themes";
 
 const ThemeContext = createContext<
@@ -25,7 +25,7 @@ const themes = [
   greenTheme,
   khakieTheme,
   yellowTheme,
-  lightBlueTheme,
+  pinkTheme,
 ];
 
 export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({

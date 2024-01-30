@@ -67,7 +67,9 @@ export const AboutSection: React.FC<{ theme: Theme }> = ({ theme }) => {
                 encompasses web and mobile applications, showcasing strong
                 programming skills and effective communication.
               </SubBio>
-              <ReadMore href="/bio">Read more</ReadMore>
+              <ReadMore href="/bio" theme={theme}>
+                Read more
+              </ReadMore>
             </BioContainer>
           </InnerContainer>
         </AboutContainer>

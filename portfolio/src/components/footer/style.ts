@@ -38,7 +38,6 @@ const FooterItemContainer = styled.div`
   width: 22.223em;
   font-size: 1.1em;
   display: grid;
-  cursor: pointer;
   color: ${(props) => props.theme.colors.text};
 `;
 
@@ -52,9 +51,12 @@ const CopyRight = styled.p`
   color: black;
 `;
 const ContactLink = styled(Link)``;
-const Email = styled(Link)``;
+const Email = styled.a`
+  color: ${(props) => props.theme.colors.title};
+  text-decoration: none;
+`;
 
-const Title = styled.div`
+const Title = styled.h2`
   margin: 15px;
   font-size: 1em;
   line-height: 2.5;

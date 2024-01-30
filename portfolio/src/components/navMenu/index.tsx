@@ -97,14 +97,21 @@ const NavMenu = () => {
             <motion.div variants={itemVariants} transition={itemTransition}>
               <ListItem>
                 <Link href="/" underline="none" color="inherit">
-                  Austin Merilos
+                  Home
                 </Link>
               </ListItem>
             </motion.div>
             <motion.div variants={itemVariants} transition={itemTransition}>
               <ListItem>
                 <Link href="/" underline="none" color="inherit">
-                  Resume
+                  Résumé
+                </Link>
+              </ListItem>
+            </motion.div>
+            <motion.div variants={itemVariants} transition={itemTransition}>
+              <ListItem>
+                <Link href="/bio" underline="none" color="inherit">
+                  About
                 </Link>
               </ListItem>
             </motion.div>

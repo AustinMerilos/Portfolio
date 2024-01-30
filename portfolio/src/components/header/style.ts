@@ -16,11 +16,6 @@ const HeaderSection = styled.section`
     background-image: none;
 
   `}
-  ${media.tablet`
-    padding: 4rem;
-    gap: 0;
-
-  `}
 `;
 
 const HeaderContainer = styled.div`
@@ -39,6 +34,10 @@ const Name = styled.div`
   font-size: 4.5em;
   color: ${(props) => props.theme.colors.title};
   text-shadow: 1px 0.5px 1px ${(props) => props.theme.colors.titleOutline};
+  ${media.mobile`
+    font-size: 2.5em;
+
+  `}
 `;
 
 const Title = styled.h1`
@@ -63,6 +62,10 @@ const Title = styled.h1`
   &:hover::after {
     top: 60%;
   }
+  ${media.mobile`
+    font-size: 2.5em;
+
+  `}
 `;
 
 const Subtitle = styled.p`
@@ -80,6 +83,11 @@ const HeadShot = styled.img`
   border-radius: 180px;
   height: fit-content;
   width: 350px;
+
+  ${media.mobile`
+    width: 200px;
+
+  `}
 `;
 
 export {

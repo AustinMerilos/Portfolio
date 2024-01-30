@@ -4,7 +4,7 @@ import yellowBackgGround from "./yellowBackground.svg";
 import whiteBackGround from "./whiteBackground.svg";
 import greenBackGround from "./greenBackGround.svg";
 import blackBackGround from "./blackBackGround.svg";
-import lightBlueBackGround from "./lightBlueBackGround.svg";
+import pinkThemeBackGround from "./pinkThemeBackGround.svg";
 import khakiBackGround from "./khakiBackGround.svg";
 
 const backgroundImages = {
@@ -14,7 +14,7 @@ const backgroundImages = {
   whiteBackGround,
   greenBackGround,
   blackBackGround,
-  lightBlueBackGround,
+  pinkThemeBackGround,
   khakiBackGround,
 };
 

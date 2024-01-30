@@ -47,6 +47,11 @@ const ExpandButton = styled.button`
   background-color: transparent;
   color: ${(props) => props.theme.colors.button};
   font-size: 25px;
+
+  &:hover {
+    background-color: ${(props) => props.theme.colors.title};
+    color: ${(props) => props.theme.colors.secondTitle};
+  }
 `;
 
 const ExperienceInnerContainer = styled.div`

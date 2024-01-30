@@ -1,4 +1,3 @@
-import { Link } from "@material-ui/core";
 import styled from "styled-components";
 import InlineSVG from "react-inlinesvg";
 
@@ -72,7 +71,9 @@ const SubBioTitle = styled.h2`
 const SubBio = styled.p`
   margin-bottom: 5px;
 `;
-const ReadMore = styled(Link)`
+const ReadMore = styled.a`
+  color: ${(props) => props.theme.colors.title};
+  text-decoration: none;
   && {
     margin-bottom: 10px;
     cursor: pointer;

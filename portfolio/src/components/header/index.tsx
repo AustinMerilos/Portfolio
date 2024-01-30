@@ -48,10 +48,11 @@ export const Header: React.FC<{ theme: Theme }> = ({ theme }) => {
             UI Engineering.
           </Paragraph>
         </HeaderContent>
-        <button onClick={toggleTheme}>Toggle Theme</button>
       </div>
-
-      <HeadShot src={images.headShot}></HeadShot>
+      <div>
+        <HeadShot src={images.headShot}></HeadShot>
+        <button onClick={toggleTheme}>Secret</button>
+      </div>
     </HeaderSection>
   );
 };

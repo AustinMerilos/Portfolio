@@ -29,15 +29,19 @@ export const Footer = () => {
         <FooterInnerContainer>
           <FooterItemContainer theme={theme}>
             <Title>Say Hello</Title>
-            <Email href={`mailto:${emailAddress}`} onClick={handleEmailClick}>
+            <Email
+              href={`mailto:${emailAddress}`}
+              onClick={handleEmailClick}
+              theme={theme}
+            >
               austin.merilos@gmail
             </Email>
           </FooterItemContainer>
 
           <FooterItemContainer theme={theme}>
-            <NavLinks>Resume</NavLinks>
+            <NavLinks>Résumé</NavLinks>
+            <NavLinks href="/bio">About</NavLinks>
             <NavLinks href="/experience">Experience</NavLinks>
-            <NavLinks>Something</NavLinks>
           </FooterItemContainer>
         </FooterInnerContainer>
         <Divider />

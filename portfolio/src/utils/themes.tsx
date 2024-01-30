@@ -76,7 +76,7 @@ const darkTheme: Theme = {
     background: backgroundImages.blackBackGround,
   },
 };
-const lightBlueTheme: Theme = {
+const pinkTheme: Theme = {
   colors: {
     primary: "#e8998d",
     secondary: "#6c9a8b",
@@ -85,7 +85,7 @@ const lightBlueTheme: Theme = {
     text: "#f7fff7",
     button: "white",
     title: "#c7585c",
-    background: backgroundImages.lightBlueBackGround,
+    background: backgroundImages.pinkThemeBackGround,
   },
 };
 
@@ -95,5 +95,5 @@ export {
   greenTheme,
   khakieTheme,
   yellowTheme,
-  lightBlueTheme,
+  pinkTheme,
 };
