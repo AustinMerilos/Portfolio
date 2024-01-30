@@ -60,17 +60,16 @@ export const AboutSection: React.FC<{ theme: Theme }> = ({ theme }) => {
             <BioContainer theme={theme}>
               <SubBioTitle>A little about me</SubBioTitle>
               <SubBio>
-                Software Engineer with a demonstrated history of working with
-                web and mobile applications. Strong programming and
-                communication professional with a bachelor's degree focused in
-                Computer Informatics and a 2nd bachelor's in Mass Communication
-                from The University of Louisiana at Lafayette. I hope to learn
-                and gain experience from the growing industry of technology and
-                communication.
+                I've always enjoyed discovering new creative activites to occupy
+                my time, this passion has guided me through diverse projects,
+                including videography, audio & video production, IT services,
+                and finally software engineering. As an engineer, my experience
+                encompasses web and mobile applications, showcasing strong
+                programming skills and effective communication.
               </SubBio>
               <ReadMore href="/bio">Read more</ReadMore>
             </BioContainer>
-          </InnerContainer>{" "}
+          </InnerContainer>
         </AboutContainer>
       </AnimatedComponent>
     </div>

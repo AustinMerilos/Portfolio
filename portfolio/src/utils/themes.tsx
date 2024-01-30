@@ -78,13 +78,13 @@ const darkTheme: Theme = {
 };
 const lightBlueTheme: Theme = {
   colors: {
-    primary: "#4ecdc4",
-    secondary: "#f7fff7",
-    titleOutline: "white",
-    secondTitle: "black",
+    primary: "#e8998d",
+    secondary: "#6c9a8b",
+    titleOutline: "black",
+    secondTitle: "white",
     text: "#f7fff7",
-    button: "black",
-    title: "#1a535c",
+    button: "white",
+    title: "#c7585c",
     background: backgroundImages.lightBlueBackGround,
   },
 };

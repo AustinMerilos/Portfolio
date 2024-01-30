@@ -1,7 +1,6 @@
 import images from "../../assets";
 import { AnimatedComponent } from "../../utils/animated";
 import { useTheme } from "../../utils/themeContext";
-import { Theme } from "../../utils/themes";
 import {
   ContactLink,
   CopyRight,

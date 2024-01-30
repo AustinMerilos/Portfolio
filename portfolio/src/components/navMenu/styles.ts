@@ -1,4 +1,4 @@
-import { Menu, MenuItem, IconButton } from "@material-ui/core";
+import { MenuItem, IconButton } from "@material-ui/core";
 import MenuOpenIcon from "@mui/icons-material/MenuOpen";
 
 import MenuIcon from "@material-ui/icons/Menu";
@@ -19,27 +19,6 @@ const NavContainer = styled.div`
     
 
   `}
-`;
-const NavButtonsContainer = styled.div`
-  display: flex;
-  gap: 53%;
-  ${media.mobile`
-   
-
-  `}
-  ${media.tablet`
-    
-
-  `}
-`;
-
-const ListContainer = styled(Menu)`
-  && {
-    top: 1.39em !important;
-    right: 3.41em !important;
-    width: 22.223em !important;
-    font-size: 1.1em !important;
-  }
 `;
 
 const ListItem = styled(MenuItem)`
@@ -105,9 +84,7 @@ export {
   Title,
   CloseButton,
   MenuButton,
-  ListContainer,
   ListItem,
   SocialContainer,
-  NavButtonsContainer,
   MenuOpenedButton,
 };

@@ -3,22 +3,17 @@ import { Link, Menu } from "@material-ui/core";
 import {
   ListItem,
   Title,
-  ListContainer,
   NavButton,
   CloseButton,
   NavContainer,
   MenuButton,
   SocialImage,
   SocialContainer,
-  NavButtonsContainer,
   MenuOpenedButton,
 } from "./styles";
 
-import CloseIcon from "@material-ui/icons/Close";
-import MenuOpenIcon from "@mui/icons-material/MenuOpen";
 import { motion } from "framer-motion";
 import images from "../../assets";
-import { Theme } from "../../utils/themes";
 import { useTheme } from "../../utils/themeContext";
 
 const NavMenu = () => {

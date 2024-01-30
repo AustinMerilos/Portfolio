@@ -41,7 +41,7 @@ export const ProjectSection: React.FC<{ theme: Theme }> = ({ theme }) => {
               <BlurOverlay>
                 <SingleProject
                   theme={theme}
-                  title="This project was completed as a code challenge in the interview process for a job. It's built with React & Next.js, it connects to the Guardian API to search for articles and the styling is done with Tailwind CSS"
+                  title=""
                   description=""
                   image={images.upcomingProject}
                   source=""

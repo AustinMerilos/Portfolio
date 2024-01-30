@@ -6,8 +6,6 @@ import { experiencesData } from "./constants";
 import { Container } from "./style";
 import { useTheme } from "../../utils/themeContext";
 import { Header } from "../../components/header";
-import { Footer } from "../../components/footer";
-import { AnimatedComponent } from "../../utils/animated";
 
 export default function Home() {
   const { theme } = useTheme();
