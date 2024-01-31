@@ -1,5 +1,7 @@
-import images from "../../assets/images";
 import { useTheme } from "../../utils/themeContext";
+import bioData from "./constants";
+import { motion } from "framer-motion";
+
 import {
   Container,
   Content,
@@ -15,64 +17,25 @@ const BioPage = () => {
   return (
     <Container theme={theme}>
       <Content>
-        <Title theme={theme}>hi</Title>
-        <div>
-          <Subtitle theme={theme}>quick story</Subtitle>
-          <Paragraph theme={theme}>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s
-            with the release of Letraset sheets containing Lorem Ipsum passages,
-            and more recently with desktop publishing software like Aldus
-            PageMaker including versions of Lorem Ipsum.
-          </Paragraph>
-        </div>
-        <Subtitle theme={theme}>developer</Subtitle>
-        <InnerContainer>
-          <Paragraph theme={theme}>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s
-            with the release of Letraset sheets containing Lorem Ipsum passages,
-            and more recently with desktop publishing software like Aldus
-            PageMaker including versions of Lorem Ipsum.
-          </Paragraph>
-          <Image theme={theme} src={images.typing} />
-        </InnerContainer>
-        <div>
-          <Subtitle theme={theme}>As a person</Subtitle>
-          <Paragraph theme={theme}>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s
-            with the release of Letraset sheets containing Lorem Ipsum passages,
-            and more recently with desktop publishing software like Aldus
-            PageMaker including versions of Lorem Ipsum.
-          </Paragraph>
-        </div>
-        <div>
-          <Subtitle theme={theme}>As a colleague</Subtitle>
-          <Paragraph theme={theme}>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s
-            with the release of Letraset sheets containing Lorem Ipsum passages,
-            and more recently with desktop publishing software like Aldus
-            PageMaker including versions of Lorem Ipsum.
-          </Paragraph>
-        </div>
+        <motion.div whileHover={{ scale: 1.1 }} transition={{ duration: 0.3 }}>
+          <Title theme={theme}>I have always loved tech</Title>
+        </motion.div>
+
+        <>
+          {bioData.map((data) => (
+            <>
+              <Subtitle theme={theme}>{data.title}</Subtitle>
+              <InnerContainer>
+                <div>
+                  <Paragraph theme={theme}>{data.paragraph1}</Paragraph>
+                  <Paragraph theme={theme}>{data.paragraph2}</Paragraph>
+                </div>
+
+                <Image theme={theme} src={data.image} />
+              </InnerContainer>
+            </>
+          ))}
+        </>
       </Content>
     </Container>
   );

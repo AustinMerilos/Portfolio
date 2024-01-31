@@ -59,14 +59,14 @@ const MenuOpenedButton = styled(MenuOpenIcon)`
   && {
     width: 50px;
     height: 50px;
-    color: ${(props) => props.theme.colors.secondary};
+    color: ${(props) => props.theme.colors.title};
   }
 `;
 const ThemeIcon = styled(PaletteSharpIcon)`
   && {
     width: 30px;
     height: 30px;
-    color: ${(props) => props.theme.colors.secondary};
+    color: ${(props) => props.theme.colors.title};
   }
 `;
 

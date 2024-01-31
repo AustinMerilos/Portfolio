@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import media from "../../utils/styleSizes";
 import InlineSVG from "react-inlinesvg";
 
 const Container = styled.div`

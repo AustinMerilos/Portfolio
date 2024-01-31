@@ -11,12 +11,9 @@ import {
 } from "./style";
 import images from "../../assets/images";
 import { Theme } from "../../utils/themes";
-import { useTheme } from "../../utils/themeContext";
 import { motion } from "framer-motion";
 
 export const Header: React.FC<{ theme: Theme }> = ({ theme }) => {
-  const { toggleTheme } = useTheme();
-
   return (
     <HeaderSection theme={theme}>
       <div>
@@ -51,7 +48,6 @@ export const Header: React.FC<{ theme: Theme }> = ({ theme }) => {
       </div>
       <div>
         <HeadShot src={images.headShot}></HeadShot>
-        <button onClick={toggleTheme}>Secret</button>
       </div>
     </HeaderSection>
   );
