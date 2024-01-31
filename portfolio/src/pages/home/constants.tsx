@@ -1,4 +1,4 @@
-import images from "../../assets";
+import images from "../../assets/images";
 
 export const experiencesData = [
   {

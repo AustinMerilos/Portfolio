@@ -13,7 +13,7 @@ import {
 } from "./styles";
 
 import { motion } from "framer-motion";
-import images from "../../assets";
+import images from "../../assets/images";
 import { useTheme } from "../../utils/themeContext";
 
 const NavMenu = () => {

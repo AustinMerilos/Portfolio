@@ -7,7 +7,7 @@ import {
   TextContainer,
   Title,
 } from "./styles";
-import images from "../../assets";
+import images from "../../assets/images";
 import { Theme } from "../../utils/themes";
 import { AnimatedComponent } from "../../utils/animated";
 import { motion } from "framer-motion";

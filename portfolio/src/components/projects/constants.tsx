@@ -1,4 +1,4 @@
-import images from "../../assets";
+import images from "../../assets/images";
 
 export const projectData = [
   {
@@ -26,7 +26,7 @@ export const projectData = [
   {
     title: "GoldenFoodie",
     description:
-      "This project was my first project as a way for me to get familiar with React class components and state management, it connects to the Edamam API to search for food recipes and the styling is done with CSS.",
+      "This project was my first project as a way for me to get familiar with React class components and state management, it utilizes google Firebase Authentication, connects to the Edamam API to search for food recipes and the styling is done with CSS.",
     image: images.goldenFoodie,
     source: "https://github.com/AustinMerilos/GoldenFoodie",
     liveSource: "https://goldenfoodie-98be5.web.app/",

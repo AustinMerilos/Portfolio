@@ -9,7 +9,7 @@ import {
   HeadShot,
   Name,
 } from "./style";
-import images from "../../assets";
+import images from "../../assets/images";
 import { Theme } from "../../utils/themes";
 import { useTheme } from "../../utils/themeContext";
 import { motion } from "framer-motion";

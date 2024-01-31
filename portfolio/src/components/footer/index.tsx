@@ -1,4 +1,4 @@
-import images from "../../assets";
+import images from "../../assets/images";
 import { AnimatedComponent } from "../../utils/animated";
 import { useTheme } from "../../utils/themeContext";
 import {
