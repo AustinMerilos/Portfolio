@@ -11,6 +11,7 @@ import swimply from "./swimplyLogo.svg";
 import UlLogo from "./ULL-logo-vertical.svg";
 import lapTop from "./lapTop.svg";
 import screen from "./screen.svg";
+import typing from "./typing.svg";
 
 const images = {
   aboutImage,
@@ -26,6 +27,7 @@ const images = {
   UlLogo,
   lapTop,
   screen,
+  typing,
 };
 
 export default images;

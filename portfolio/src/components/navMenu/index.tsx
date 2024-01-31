@@ -4,12 +4,13 @@ import {
   ListItem,
   Title,
   NavButton,
-  CloseButton,
   NavContainer,
   MenuButton,
   SocialImage,
-  SocialContainer,
   MenuOpenedButton,
+  ButtonContainer,
+  Button,
+  ThemeIcon,
 } from "./styles";
 
 import { motion } from "framer-motion";
@@ -18,6 +19,7 @@ import { useTheme } from "../../utils/themeContext";
 
 const NavMenu = () => {
   const { theme } = useTheme();
+  const { toggleTheme } = useTheme();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
@@ -89,9 +91,14 @@ const NavMenu = () => {
             initial="closed"
           >
             <motion.div variants={itemVariants} transition={itemTransition}>
-              <CloseButton onClick={handleCloseMenu}>
-                <MenuOpenedButton theme={theme} />
-              </CloseButton>
+              <ButtonContainer>
+                <Button onClick={toggleTheme} theme={theme}>
+                  <ThemeIcon theme={theme} />
+                </Button>
+                <Button onClick={handleCloseMenu} theme={theme}>
+                  <MenuOpenedButton theme={theme} />
+                </Button>
+              </ButtonContainer>
             </motion.div>
 
             <motion.div variants={itemVariants} transition={itemTransition}>
@@ -140,14 +147,14 @@ const NavMenu = () => {
             </motion.div>
 
             <motion.div variants={itemVariants} transition={itemTransition}>
-              <SocialContainer>
+              <div>
                 <Link href="https://www.linkedin.com/in/austinmerilos">
                   <SocialImage src={images.linkedin} />
                 </Link>
                 <Link href="https://github.com/AustinMerilos">
                   <SocialImage src={images.github} />
                 </Link>
-              </SocialContainer>
+              </div>
             </motion.div>
           </motion.div>
         </>

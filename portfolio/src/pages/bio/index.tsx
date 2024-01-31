@@ -1,5 +1,14 @@
+import images from "../../assets/images";
 import { useTheme } from "../../utils/themeContext";
-import { Container, Content, Paragraph, Subtitle, Title } from "./style";
+import {
+  Container,
+  Content,
+  Image,
+  InnerContainer,
+  Paragraph,
+  Subtitle,
+  Title,
+} from "./style";
 
 const BioPage = () => {
   const { theme } = useTheme();
@@ -21,8 +30,8 @@ const BioPage = () => {
             PageMaker including versions of Lorem Ipsum.
           </Paragraph>
         </div>
-        <div>
-          <Subtitle theme={theme}>developer</Subtitle>
+        <Subtitle theme={theme}>developer</Subtitle>
+        <InnerContainer>
           <Paragraph theme={theme}>
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
@@ -34,7 +43,8 @@ const BioPage = () => {
             and more recently with desktop publishing software like Aldus
             PageMaker including versions of Lorem Ipsum.
           </Paragraph>
-        </div>
+          <Image theme={theme} src={images.typing} />
+        </InnerContainer>
         <div>
           <Subtitle theme={theme}>As a person</Subtitle>
           <Paragraph theme={theme}>

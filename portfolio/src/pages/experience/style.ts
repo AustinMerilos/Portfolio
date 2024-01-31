@@ -56,13 +56,6 @@ const InnerContainer = styled.div`
   align-items: center;
 `;
 
-const CompanyContainer = styled.div`
-  display: flex;
-  max-width: 850px;
-  gap: 30px;
-  align-items: center;
-`;
-
 const Subtitle = styled.h2`
   font-size: 1.5em;
   margin-top: 0px;
@@ -96,7 +89,6 @@ export {
   Paragraph,
   Heading,
   Subtitle,
-  CompanyContainer,
   InnerContainer,
   Title,
   Container,

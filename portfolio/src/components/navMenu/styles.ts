@@ -1,5 +1,6 @@
 import { MenuItem, IconButton } from "@material-ui/core";
 import MenuOpenIcon from "@mui/icons-material/MenuOpen";
+import PaletteSharpIcon from "@mui/icons-material/PaletteSharp";
 
 import MenuIcon from "@material-ui/icons/Menu";
 import styled from "styled-components";
@@ -28,7 +29,10 @@ const ListItem = styled(MenuItem)`
     margin-left: 150px;
   }
 `;
-const SocialContainer = styled.div``;
+const ButtonContainer = styled.div`
+  display: flex;
+  gap: 60%;
+`;
 const NavButton = styled(IconButton)`
   && {
     margin-left: auto;
@@ -45,11 +49,9 @@ const MenuButton = styled(MenuIcon)`
   }
 `;
 
-const CloseButton = styled(IconButton)`
+const Button = styled(IconButton)`
   && {
-    margin-left: auto;
-    display: flex;
-    justify-content: flex-end;
+    margin-left: 10px;
   }
 `;
 
@@ -57,7 +59,14 @@ const MenuOpenedButton = styled(MenuOpenIcon)`
   && {
     width: 50px;
     height: 50px;
-    color: ${(props) => props.theme.colors.text};
+    color: ${(props) => props.theme.colors.secondary};
+  }
+`;
+const ThemeIcon = styled(PaletteSharpIcon)`
+  && {
+    width: 30px;
+    height: 30px;
+    color: ${(props) => props.theme.colors.secondary};
   }
 `;
 
@@ -82,9 +91,10 @@ export {
   NavButton,
   NavContainer,
   Title,
-  CloseButton,
+  Button,
   MenuButton,
   ListItem,
-  SocialContainer,
+  ButtonContainer,
   MenuOpenedButton,
+  ThemeIcon,
 };
