@@ -53,7 +53,6 @@ const InnerContainer = styled.div`
   display: flex;
   max-width: 850px;
   gap: 30px;
-  align-items: center;
   margin: 10px;
 `;
 

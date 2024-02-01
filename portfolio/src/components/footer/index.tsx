@@ -51,10 +51,16 @@ export const Footer = () => {
         <SocialContainer>
           <CopyRight>© Austin Merilos 2024</CopyRight>
           <SocialInnerContainer>
-            <ContactLink href="https://www.linkedin.com/in/austinmerilos">
+            <ContactLink
+              href="https://www.linkedin.com/in/austinmerilos"
+              target="_blank"
+            >
               <SocialImage src={images.linkedin} />
             </ContactLink>
-            <ContactLink href="https://github.com/AustinMerilos">
+            <ContactLink
+              href="https://github.com/AustinMerilos"
+              target="_blank"
+            >
               <SocialImage src={images.github} />
             </ContactLink>
           </SocialInnerContainer>

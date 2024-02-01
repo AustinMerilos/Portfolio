@@ -154,10 +154,13 @@ const NavMenu = () => {
 
             <motion.div variants={itemVariants} transition={itemTransition}>
               <div>
-                <Link href="https://www.linkedin.com/in/austinmerilos">
+                <Link
+                  href="https://www.linkedin.com/in/austinmerilos"
+                  target="_blank"
+                >
                   <SocialImage src={images.linkedin} />
                 </Link>
-                <Link href="https://github.com/AustinMerilos">
+                <Link href="https://github.com/AustinMerilos" target="_blank">
                   <SocialImage src={images.github} />
                 </Link>
               </div>

@@ -19,7 +19,7 @@ const BioPage = () => {
     <Container theme={theme}>
       <Content>
         <motion.div whileHover={{ scale: 1.1 }} transition={{ duration: 0.3 }}>
-          <Title theme={theme}>I have always loved tech</Title>
+          <Title theme={theme}>A Peek into My Life</Title>
         </motion.div>
 
         {bioData.map((data) => (

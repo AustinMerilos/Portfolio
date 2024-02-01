@@ -2,41 +2,43 @@ import images from "../../assets/images";
 
 const bioData = [
   {
-    title: "My quick story",
+    title: "My brief story",
     image: "",
     image2: "",
     paragraph1:
-      "Swimply,\n headquartered in Los Angeles, California,\br is a startup that operates a platform enabling people to rent private swimming pools for their enjoyment. \nUsers can book pools through the website or mobile app, facilitating a connection between pool owners and individuals looking for a private and personalized swimming experience.\n I initially\n started as a contractor and was hired full time in which my role involved developing features and resolving issues for both web and mobile platforms. Coded in Typescript and JavaScript with React, utilizing hooks. Executed software changes based on specific design specifications on Figma. Added tracking events with Segment tracking to collect user data for informed product decisions. Implemented and updated components under the direction of Senior Software Engineers. Worked in an agile environment with daily stand-ups, retrospectives, sprints, and scrums. Conducted quality assurance, reviewed, committed, and approved pull requests using Git workflow on GitHub.",
+      "From a young age,  I've been drawn to creative pursuits, deriving joy from activities like video games and animation.  My preference has always leaned towards pursuits that involve shaping and creating.  When I entered college, I stumbled upon another avenue that provided me with a similar sense of joy.  Engaging in video production, art projects, audio production, and eventually stumbling upon web development, I found a thorough enjoyment in crafting webpages and designing.",
     paragraph2:
-      "a member\n of the Student Technology Enhancement Program (STEP) at the University of Louisiana at Lafayette, my role involved enhancing campus technology and smart classrooms.",
+      "Since then, my journey has been marked by continuous learning and creation. I am consistently seeking ways to enhance my skills and push myself to become a more proficient developer. I've had the privilege of collaborating with experienced senior developers, gaining valuable insights into the standards expected of a high-quality product.",
   },
   {
-    title: "developer",
+    title: "Me as a Developer",
     image: images.typing,
     image2: "",
 
     paragraph1:
-      "Reverse-engineered the Ignite CLI boilerplate, which involved recreating an existing app called Painscored in a different framework within a React Native environment. Painscored was an app that allowed physicians to keep in contact with their patients and diagnose their pain levels. Coded in JavaScript and used MobX for state management. Engaged in shadowing, paired programming, and designing UI mockups for various screens. Implemented React Native packages for navigation and mapping functionality. Participated in code reviews, followed Git workflow, and contributed to sprint retros with the lead developer. Conducted Android and iOS builds on simulators. This project spanned four months, after which I eventually commenced an 8-month contract with Swimply the following year.",
-    paragraph2: "",
+      "I prioritize the readability of my code. While I can swiftly create a functional solution, I dedicate considerable time to adding comments and organizing the code. I strive for code that is clean, consistent, readable, and maintainable. Achieving functionality is important, but ensuring that features remain robust, regardless of the developer, is even more valuable.",
+    paragraph2:
+      "The prospect of working on new projects excites me as each one offers an opportunity for learning and growth. I look forward to the challenges that await me!",
   },
   {
-    title: "person",
+    title: "As a Person",
     image: "",
     image2: "",
 
     paragraph1:
-      "As a member\n of the Student Technology Enhancement Program (STEP) at the University of Louisiana at Lafayette, my role involved enhancing campus technology and smart classrooms. I employed Adobe Creative Suite to craft designs and edit training videos. I was responsible for formatting the website according to campus guidelines, designing pages to match the university's style. Additionally, I managed content using the Drupal 7 framework, updated the inventory database, and collaborated with co-workers through Microsoft Teams.",
+      "My appreciation for creativity is a driving force behind my choice in frontend development. When presented with designs, I find joy in envisioning improvements and simplifications.",
     paragraph2:
-      "a member\n of the Student Technology Enhancement Program (STEP) at the University of Louisiana at Lafayette, my role involved enhancing campus technology and smart classrooms.",
+      "This creative mindset has proven invaluable in overcoming challenges. Fueling my career is a blend of curiosity and compassion, driving me to cultivate a broad spectrum of skills and interests that continuously contribute to my professional journey.",
   },
   {
-    title: "colleague",
+    title: "Role as Team Member",
     image: "",
     image2: images.world,
 
     paragraph1:
-      "As a member of the Student Technology Enhancement Program (STEP) at the University of Louisiana at Lafayette, my role involved enhancing campus technology and smart classrooms. I employed Adobe Creative Suite to craft designs and edit training videos. I was responsible for formatting the website according to campus guidelines, designing pages to match the university's style. Additionally, I managed content using the Drupal 7 framework, updated the inventory database, and collaborated with co-workers through Microsoft Teams.",
-    paragraph2: "",
+      "As a team player with a background in computer science and mass communication, I seamlessly engage with both the technically oriented individuals and those with artistic inclinations within the team. Going the extra mile to assist my team is a commitment I uphold. My communication skills are top-notch, refined through collaboration with diverse colleagues in various environments. This exposure has equipped me to convey ideas creatively, ensuring everyone understands.",
+    paragraph2:
+      "Working for a startup provided me with a unique blend of insights into the business side of a tech company while consistently delivering industry-standard results on the production side.I am always open to conversations and respond promptly to emails and Slack messages. Beyond work, I'm always down to get coffee or lunch!",
   },
 ];
 
