@@ -41,6 +41,7 @@ const Content = styled.div`
 const InnerContainer = styled.div`
   display: flex;
   align-items: center;
+  gap: 20px;
 `;
 
 const Image = styled(InlineSVG)`

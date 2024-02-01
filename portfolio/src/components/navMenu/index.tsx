@@ -110,7 +110,13 @@ const NavMenu = () => {
             </motion.div>
             <motion.div variants={itemVariants} transition={itemTransition}>
               <ListItem>
-                <Link href="/" underline="none" color="inherit">
+                <Link
+                  underline="none"
+                  color="inherit"
+                  href="/resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Résumé
                 </Link>
               </ListItem>

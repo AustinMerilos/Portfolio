@@ -1,8 +1,15 @@
 import styled from "styled-components";
 import InlineSVG from "react-inlinesvg";
+import media from "../../utils/styleSizes";
 
 const AboutContainer = styled.section`
   display: flex;
+
+  ${media.mobile`
+   display:grid;
+   
+
+  `}
 `;
 const Image = styled(InlineSVG)`
   max-width: 35%;
@@ -10,6 +17,11 @@ const Image = styled(InlineSVG)`
     fill: ${(props) => props.theme.colors.primary};
     stroke: ${(props) => props.theme.colors.secondary};
   }
+  ${media.mobile`
+   max-width: 0;
+   
+
+  `}
 `;
 
 const InnerContainer = styled.div`

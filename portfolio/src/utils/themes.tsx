@@ -32,7 +32,7 @@ const khakieTheme: Theme = {
     secondary: "#948775",
     titleOutline: "white",
     secondTitle: "white",
-    text: "4a382a",
+    text: "black",
     button: "white",
     title: "#305d9d",
     background: backgroundImages.khakiBackGround,

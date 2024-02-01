@@ -1,11 +1,18 @@
 import { Link } from "@material-ui/core";
 import styled from "styled-components";
 import LanguageIcon from "@mui/icons-material/Language";
+import media from "../../utils/styleSizes";
 const ExperienceContainer = styled.section`
   padding: 8%;
 `;
 const ExperineceOutterContainer = styled.section`
   padding: 0 24%;
+
+  ${media.mobile`
+    padding: 0;
+   
+
+  `}
 `;
 
 const Title = styled.h1`
@@ -65,6 +72,13 @@ const InnerGridContainer = styled.div`
   gap: 10px;
   padding: 5px;
   justify-content: center;
+
+  ${media.mobile`
+     display: inline;
+     padding: 0;
+   
+
+  `}
 `;
 
 const Website = styled(Link)`
@@ -112,6 +126,13 @@ const SkillContainer = styled.div`
   gap: 5px;
   padding: 16px;
   justify-content: left;
+
+  ${media.mobile`
+     display: inline;
+     padding: 0;
+   
+
+  `}
 `;
 
 const SkillItem = styled.p`

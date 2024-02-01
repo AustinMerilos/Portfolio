@@ -39,7 +39,9 @@ export const Footer = () => {
           </FooterItemContainer>
 
           <FooterItemContainer theme={theme}>
-            <NavLinks>Résumé</NavLinks>
+            <NavLinks href="/resume.pdf" target="_blank">
+              Résumé
+            </NavLinks>
             <NavLinks href="/bio">About</NavLinks>
             <NavLinks href="/experience">Experience</NavLinks>
           </FooterItemContainer>

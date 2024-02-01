@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import InlineSVG from "react-inlinesvg";
+import media from "../../utils/styleSizes";
 
 const CurrentlyContainer = styled.section`
   padding: 5%;
@@ -46,6 +47,11 @@ const Image = styled(InlineSVG)`
     fill: ${(props) => props.theme.colors.secondary};
     stroke: ${(props) => props.theme.colors.primary};
   }
+  ${media.mobile`
+     max-width: 0;
+   
+
+  `}
 `;
 
 export {

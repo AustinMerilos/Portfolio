@@ -15,7 +15,7 @@ type MediaFunction = {
 };
 
 const sizes: MediaSizes = {
-  mobile: 320,
+  mobile: 425,
   tablet: 768,
   desktop: 992,
   largeDesktop: 1200,

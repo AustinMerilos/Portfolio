@@ -11,6 +11,7 @@ import {
   Subtitle,
   Title,
 } from "./style";
+import { AnimatedComponent } from "../../utils/animated";
 
 const BioPage = () => {
   const { theme } = useTheme();
@@ -21,21 +22,20 @@ const BioPage = () => {
           <Title theme={theme}>I have always loved tech</Title>
         </motion.div>
 
-        <>
-          {bioData.map((data) => (
-            <>
-              <Subtitle theme={theme}>{data.title}</Subtitle>
-              <InnerContainer>
-                <div>
-                  <Paragraph theme={theme}>{data.paragraph1}</Paragraph>
-                  <Paragraph theme={theme}>{data.paragraph2}</Paragraph>
-                </div>
+        {bioData.map((data) => (
+          <AnimatedComponent>
+            <Subtitle theme={theme}>{data.title}</Subtitle>
+            <InnerContainer>
+              <Image theme={theme} src={data.image2} />
+              <div>
+                <Paragraph theme={theme}>{data.paragraph1}</Paragraph>
+                <Paragraph theme={theme}>{data.paragraph2}</Paragraph>
+              </div>
 
-                <Image theme={theme} src={data.image} />
-              </InnerContainer>
-            </>
-          ))}
-        </>
+              <Image theme={theme} src={data.image} />
+            </InnerContainer>
+          </AnimatedComponent>
+        ))}
       </Content>
     </Container>
   );

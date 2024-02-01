@@ -12,6 +12,7 @@ import UlLogo from "./ULL-logo-vertical.svg";
 import lapTop from "./lapTop.svg";
 import screen from "./screen.svg";
 import typing from "./typing.svg";
+import world from "./world.svg";
 
 const images = {
   aboutImage,
@@ -28,6 +29,7 @@ const images = {
   lapTop,
   screen,
   typing,
+  world,
 };
 
 export default images;

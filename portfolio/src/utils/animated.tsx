@@ -3,7 +3,7 @@ import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 const sectionVariant = {
   visible: { opacity: 1, y: 0, x: 0, scale: 1, transition: { duration: 0.5 } },
-  hidden: { opacity: 0, y: -50, x: 100, scale: 0.8 },
+  hidden: { opacity: 0, y: 0, x: 0, scale: 0.8 },
 };
 
 export const AnimatedComponent = ({ children }: any) => {

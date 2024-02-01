@@ -54,6 +54,7 @@ const InnerContainer = styled.div`
   max-width: 850px;
   gap: 30px;
   align-items: center;
+  margin: 10px;
 `;
 
 const Subtitle = styled.h2`
@@ -63,6 +64,8 @@ const Subtitle = styled.h2`
   text-shadow: 1px 0.5px 1px ${(props) => props.theme.colors.titleOutline};
   ${media.mobile`
     font-size: 1em;
+     margin: 10px;
+    
   `}
 `;
 
@@ -82,6 +85,7 @@ const Paragraph = styled.p`
 
   ${media.mobile`
     font-size: 0.7em;
+    
   `}
 `;
 

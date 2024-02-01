@@ -36,21 +36,20 @@ export const ProjectSection: React.FC<{ theme: Theme }> = ({ theme }) => {
               liveSource={project.liveSource}
             />
           ))}
-          <AnimatedComponent>
-            <BlurOverlayContainer>
-              <BlurOverlay>
-                <SingleProject
-                  theme={theme}
-                  title=""
-                  description=""
-                  image={images.upcomingProject}
-                  source=""
-                />
-              </BlurOverlay>
 
-              <TextOverlay>Coming soon</TextOverlay>
-            </BlurOverlayContainer>
-          </AnimatedComponent>
+          <BlurOverlayContainer>
+            <BlurOverlay>
+              <SingleProject
+                theme={theme}
+                title=""
+                description=""
+                image={images.upcomingProject}
+                source=""
+              />
+            </BlurOverlay>
+
+            <TextOverlay>Coming soon</TextOverlay>
+          </BlurOverlayContainer>
         </ProjectInnerGrid>
       </AnimatedComponent>
     </ProjectContainer>
