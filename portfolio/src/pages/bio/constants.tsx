@@ -2,7 +2,7 @@ import images from "../../assets/images";
 
 const bioData = [
   {
-    title: "My brief story",
+    title: "My Brief Story",
     image: "",
     image2: "",
     paragraph1:

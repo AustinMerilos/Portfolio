@@ -13,6 +13,7 @@ import lapTop from "./lapTop.svg";
 import screen from "./screen.svg";
 import typing from "./typing.svg";
 import world from "./world.svg";
+import personalWebsite from "./personalWebsite.svg";
 
 const images = {
   aboutImage,
@@ -30,6 +31,7 @@ const images = {
   screen,
   typing,
   world,
+  personalWebsite,
 };
 
 export default images;
