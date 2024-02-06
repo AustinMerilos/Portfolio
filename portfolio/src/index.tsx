@@ -21,7 +21,6 @@ root.render(
             <Route path="/" element={<Home />}></Route>
             <Route path="/experience" element={<ExperiencePage />}></Route>
             <Route path="/bio" element={<BioPage />}></Route>
-            <Route path="/resume.pdf" element={"resume.pdf"}></Route>
           </Routes>
         </Router>
         <Footer />
