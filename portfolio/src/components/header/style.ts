@@ -81,7 +81,6 @@ const Paragraph = styled.p`
 
 const HeadShot = styled.img`
   border-radius: 180px;
-
   width: 350px;
 
   ${media.mobile`

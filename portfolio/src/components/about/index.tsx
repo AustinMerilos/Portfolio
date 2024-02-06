@@ -47,7 +47,10 @@ export const AboutSection: React.FC<{ theme: Theme }> = ({ theme }) => {
               <Title theme={theme}> My Skills</Title>
             </motion.div>
           </div>
-          <Image src={images.aboutImage} theme={theme}></Image>
+          <svg>
+            <Image src={images.aboutImage} theme={theme}></Image>
+          </svg>
+
           <InnerContainer>
             <GridContainer>
               {skillData.map((skill) => (

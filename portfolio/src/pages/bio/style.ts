@@ -31,11 +31,13 @@ const Paragraph = styled.p`
   margin-bottom: 20px;
   color: ${(props) => props.theme.colors.text};
   max-width: 850px;
+  overflow: hidden;
   //text-shadow: 1px 0.5px 1px ${(props) => props.theme.colors.titleOutline};
 `;
 const Content = styled.div`
   line-height: 1.6;
   margin: 130px auto;
+  max-width: 65%;
 `;
 
 const InnerContainer = styled.div`
@@ -44,8 +46,8 @@ const InnerContainer = styled.div`
 `;
 
 const Image = styled(InlineSVG)`
-  max-width: 40%;
-  height: auto;
+  width: 40%;
+
   path {
     fill: ${(props) => props.theme.colors.title};
     stroke: ${(props) => props.theme.colors.text};

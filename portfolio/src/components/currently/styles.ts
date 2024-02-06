@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import InlineSVG from "react-inlinesvg";
 import media from "../../utils/styleSizes";
+import { ReactComponent as desktop } from "../../assets/images/desktop.svg";
 
 const CurrentlyContainer = styled.section`
   padding: 5%;
@@ -40,9 +40,8 @@ const SubTitle = styled.p`
   color: ${(props) => props.theme.colors.text};
 `;
 
-const Image = styled(InlineSVG)`
-  max-width: 55%;
-  height: auto;
+const Image = styled(desktop)`
+  width: 90%;
   path {
     fill: ${(props) => props.theme.colors.secondary};
     stroke: ${(props) => props.theme.colors.primary};

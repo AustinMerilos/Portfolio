@@ -7,7 +7,6 @@ import {
   TextContainer,
   Title,
 } from "./styles";
-import images from "../../assets/images";
 import { Theme } from "../../utils/themes";
 import { AnimatedComponent } from "../../utils/animated";
 import { motion } from "framer-motion";
@@ -32,7 +31,7 @@ const CurrentlySection: React.FC<{ theme: Theme }> = ({ theme }) => {
             <SubTitle theme={theme}>{paragraph.paragraph.fifth}</SubTitle>
           </TextContainer>
 
-          <Image src={images.desktop} theme={theme} />
+          <Image theme={theme} />
         </CurrentlyContainerInnerContainer>
       </AnimatedComponent>
     </CurrentlyContainer>
