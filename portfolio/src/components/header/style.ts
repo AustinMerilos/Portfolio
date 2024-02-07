@@ -16,6 +16,10 @@ const HeaderSection = styled.section`
     background-image: none;
 
   `}
+  ${media.tablet`
+   display:flow;
+   
+  `}
 `;
 
 const HeaderContainer = styled.div`

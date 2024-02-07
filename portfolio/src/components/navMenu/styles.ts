@@ -46,6 +46,13 @@ const MenuButton = styled(MenuIcon)`
     width: 50px;
     height: 50px;
     color: ${(props) => props.theme.colors.secondTitle};
+
+    ${media.mobile`
+     width: 20px;
+     height: 20px;
+   
+
+  `}
   }
 `;
 

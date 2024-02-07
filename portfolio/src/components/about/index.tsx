@@ -63,12 +63,12 @@ export const AboutSection: React.FC<{ theme: Theme }> = ({ theme }) => {
             <BioContainer theme={theme}>
               <SubBioTitle>A little about me</SubBioTitle>
               <SubBio>
-                I've always enjoyed discovering new creative activites to occupy
-                my time, this passion has guided me through diverse projects,
-                including videography, audio & video production, IT services,
-                and finally software engineering. As an engineer, my experience
-                encompasses web and mobile applications, showcasing strong
-                programming skills and effective communication.
+                I've always enjoyed discovering new creative activities to
+                occupy my time, this passion has guided me through diverse
+                projects, including videography, audio & video production, IT
+                services, and finally software engineering. As an engineer, my
+                experience encompasses web and mobile applications, showcasing
+                strong programming skills and effective communication.
               </SubBio>
               <ReadMore href="/bio" theme={theme}>
                 Read more

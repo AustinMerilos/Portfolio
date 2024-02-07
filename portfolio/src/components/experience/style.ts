@@ -74,7 +74,7 @@ const InnerGridContainer = styled.div`
   justify-content: center;
 
   ${media.mobile`
-     display: inline;
+     display: ruby;
      padding: 0;
    
 
@@ -132,6 +132,10 @@ const SkillContainer = styled.div`
      padding: 0;
    
 
+  `}
+  ${media.tablet`
+   display:inline;
+   
   `}
 `;
 
