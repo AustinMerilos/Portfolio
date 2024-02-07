@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import InlineSVG from "react-inlinesvg";
+import media from "../../utils/styleSizes";
 
 const Container = styled.div`
   background-color: ${(props) => props.theme.colors.primary};
@@ -52,6 +53,11 @@ const Image = styled(InlineSVG)`
     fill: ${(props) => props.theme.colors.title};
     stroke: ${(props) => props.theme.colors.text};
   }
+
+  ${media.tablet`
+    width:0%;
+
+  `}
 `;
 
 export {
