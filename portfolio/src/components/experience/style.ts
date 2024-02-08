@@ -13,6 +13,10 @@ const ExperineceOutterContainer = styled.section`
    
 
   `}
+  ${media.desktop`
+   padding:0;
+   
+  `}
 `;
 
 const Title = styled.h1`

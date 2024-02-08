@@ -20,6 +20,10 @@ const HeaderSection = styled.section`
    display:flow;
    
   `}
+  ${media.desktop`
+   display:flow;
+   
+  `}
 `;
 
 const HeaderContainer = styled.div`
