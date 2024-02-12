@@ -55,7 +55,7 @@ const lightTheme: Theme = {
   colors: {
     primary: "#f2efea",
     secondary: "#66d7d1",
-    titleOutline: "white",
+    titleOutline: "black",
     secondTitle: "white",
     text: "black",
     button: "white",
