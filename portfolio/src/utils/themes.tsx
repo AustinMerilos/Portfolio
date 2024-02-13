@@ -17,7 +17,7 @@ const greenTheme: Theme = {
   colors: {
     primary: "#cdf7e5",
     secondary: "#c2b280",
-    titleOutline: "black",
+    titleOutline: "rgba(0, 0, 0, 0.1)",
     secondTitle: "white",
     text: "black",
     button: "white",
@@ -30,7 +30,7 @@ const khakieTheme: Theme = {
   colors: {
     primary: "#eae8dd",
     secondary: "#948775",
-    titleOutline: "white",
+    titleOutline: "rgba(0, 0, 0, 0.1)",
     secondTitle: "white",
     text: "black",
     button: "white",
@@ -42,7 +42,7 @@ const yellowTheme: Theme = {
   colors: {
     primary: "#f4f1bb",
     secondary: "#9bc1bc",
-    titleOutline: "black",
+    titleOutline: "rgba(0, 0, 0, 0.3)",
     secondTitle: "white",
     text: "black",
     button: "white",
@@ -55,7 +55,7 @@ const lightTheme: Theme = {
   colors: {
     primary: "#f2efea",
     secondary: "#66d7d1",
-    titleOutline: "black",
+    titleOutline: "rgba(0, 0, 0, 0.2)",
     secondTitle: "white",
     text: "black",
     button: "white",
@@ -68,7 +68,7 @@ const darkTheme: Theme = {
   colors: {
     primary: "#2e323a",
     secondary: "#6cd4be",
-    titleOutline: "#46666e",
+    titleOutline: "rgba(0, 0, 0, 0.3)",
     secondTitle: "white",
     text: "#ecf0f1",
     button: "white",
@@ -80,7 +80,7 @@ const pinkTheme: Theme = {
   colors: {
     primary: "#e8998d",
     secondary: "#6c9a8b",
-    titleOutline: "black",
+    titleOutline: "rgba(0, 0, 0, 0.1)",
     secondTitle: "white",
     text: "#f7fff7",
     button: "white",

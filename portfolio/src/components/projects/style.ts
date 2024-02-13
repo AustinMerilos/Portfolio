@@ -9,7 +9,7 @@ const Title = styled.h1`
   font-size: 2.5em;
   margin: 10px;
   color: ${(props) => props.theme.colors.title};
-  text-shadow: 1px 0.5px 1px ${(props) => props.theme.colors.secondary};
+  text-shadow: 0 5px 10px ${(props) => props.theme.colors.titleOutline};
 
   &::after {
     content: "";
@@ -59,7 +59,7 @@ const ProjectImage = styled.img`
 const ProjectTitle = styled.h1`
   margin-bottom: 10px;
   color: ${(props) => props.theme.colors.title};
-  text-shadow: 1px 0.5px 1px ${(props) => props.theme.colors.titleOutline};
+  //text-shadow: 1px 0.5px 2px ${(props) => props.theme.colors.titleOutline};
 `;
 const ProjectDescription = styled.p`
   margin-bottom: 25px;

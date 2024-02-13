@@ -16,7 +16,7 @@ const Title = styled.h1`
   margin-bottom: 10px;
   text-align: center;
   color: ${(props) => props.theme.colors.title};
-  text-shadow: 1px 0.5px 1px ${(props) => props.theme.colors.titleOutline};
+  text-shadow: 0 5px 10px ${(props) => props.theme.colors.titleOutline};
 
   ${media.mobile`
     font-size: 1.5em;
@@ -60,7 +60,7 @@ const Subtitle = styled.h2`
   font-size: 1.5em;
   margin-top: 0px;
   color: ${(props) => props.theme.colors.title};
-  text-shadow: 1px 0.5px 1px ${(props) => props.theme.colors.titleOutline};
+  text-shadow: 0 5px 10px ${(props) => props.theme.colors.titleOutline};
   ${media.mobile`
     font-size: 1em;
      margin: 10px;
@@ -71,7 +71,7 @@ const Subtitle = styled.h2`
 const Heading = styled.h3`
   font-size: 1.3em;
   color: ${(props) => props.theme.colors.title};
-  text-shadow: 1px 0.5px 1px ${(props) => props.theme.colors.titleOutline};
+  text-shadow: 0 5px 10px ${(props) => props.theme.colors.titleOutline};
   ${media.mobile`
     font-size: .9em;
   `}

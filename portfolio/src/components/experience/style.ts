@@ -25,7 +25,7 @@ const Title = styled.h1`
   margin-bottom: 10px;
   text-align: center;
   color: ${(props) => props.theme.colors.title};
-  text-shadow: 1px 0.5px 1px ${(props) => props.theme.colors.titleOutline};
+  text-shadow: 0 5px 10px ${(props) => props.theme.colors.titleOutline};
 
   &::after {
     content: "";
