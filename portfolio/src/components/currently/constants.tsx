@@ -14,9 +14,9 @@ const paragraph: Paragraph = {
     first:
       "I'm actively seeking the next step in my career journey. I've been dedicated to enhancing my expertise in React development by undertaking and completing personal projects, ensuring that I stay well-versed in the latest industry trends.",
     second:
-      "Prior to this, I engaged in online courses to strengthen my skills in frontend and fullstack development.In addition to web development, I aspire to broaden my capabilities in native environments as I advance.",
+      "Before this, I engaged in online courses to strengthen my skills in frontend and full-stack development. In addition to web development, I aspire to broaden my capabilities in native environments as I advance.",
     third:
-      "I plan on taking more advance projects that deal with more in depth backend enviornments or possibly a popular content mangagment system",
+      "I plan on taking more advanced projects that deal with more in-depth backend environments or possibly a popular content management systems.",
     fourth:
       "I've recognized that I sometimes face challenges in effectively communicating my code and explaining my processes. Consequently, I am actively working on enhancing my ability to articulate technical concepts and share my insights more clearly.",
     fifth:

@@ -4,7 +4,7 @@ export const experiencesData = [
   {
     title: "Jr. Software Engineer at Swimply",
     content:
-      "Developing front-end and mobile app solutions for pool hosting services on React framework.",
+      "Developing front-end and mobile app solutions for pool hosting services on the React framework.",
     date: "2020 - 2022",
     link: "Swimply.com",
     image: images.swimply,
@@ -32,7 +32,7 @@ export const experiencesData = [
   {
     title: "Website Coordinator/IT Technician at STEP",
     content:
-      "Format website within campus guidelines and design pages to be in line with the university’s style on Drupel 7 CMS framework.",
+      "Format the website within campus guidelines and design pages to be in line with the university’s style on the Drupel 7 CMS framework.",
     date: "2016 - 2020",
     link: "step.louisiana.edu",
     image: images.UlLogo,

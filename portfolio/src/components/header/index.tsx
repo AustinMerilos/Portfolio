@@ -30,18 +30,18 @@ export const Header: React.FC<{ theme: Theme }> = ({ theme }) => {
           </>
 
           <Subtitle theme={theme}>
-            I enjoy crafting solid and responsive frontend products for great
+            I enjoy crafting solid and responsive front-end products for great
             user experiences.
           </Subtitle>
         </HeaderContainer>
 
         <HeaderContent>
           <Paragraph theme={theme}>
-            Experience in building successful products that focus on users needs
-            across different platforms.
+            Experience in building successful products that focus on users'
+            needs across different platforms.
           </Paragraph>
           <Paragraph theme={theme}>
-            Highly skilled at react functional components, agile development &
+            Highly skilled at React functional components, agile development &
             UI Engineering.
           </Paragraph>
         </HeaderContent>

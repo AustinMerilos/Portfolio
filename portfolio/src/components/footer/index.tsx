@@ -18,7 +18,7 @@ import {
 
 export const Footer = () => {
   const { theme } = useTheme();
-  const emailAddress = "austin.merilos@gmail";
+  const emailAddress = "austin.merilos@gmail.com";
 
   const handleEmailClick = () => {
     window.location.href = `mailto:${emailAddress}`;

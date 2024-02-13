@@ -65,7 +65,7 @@ const NavMenu = () => {
 
   const itemTransition = { opacity: { duration: 0.2 } };
 
-  const emailAddress = "austin.merilos@gmail";
+  const emailAddress = "austin.merilos@gmail.com";
   const handleEmailClick = () => {
     window.location.href = `mailto:${emailAddress}`;
   };

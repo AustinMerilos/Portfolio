@@ -13,7 +13,7 @@ const eductaionData = [
       "B.A in Mass Communication - University of Louisiana at Lafaytte December 2018",
     educationHeading: "Relevant Coursework/projects:",
     education:
-      "Contributed to diverse projects encompassing audio and video production. Produced student documentaries and news reels, managing camera and stage equipment. Utilized video and audio editing software Adobe Premiere and Audition, wrote scripts and storyboards, and oversaw the production of news reels. Conducted numerous interviews for news projects, gaining insights into legal aspects such as liability and relevant laws associated with news reporting.",
+      "Contributed to diverse projects encompassing audio and video production. Produced student documentaries and newsreels, managing camera and stage equipment. Utilized video and audio editing software Adobe Premiere and Audition, wrote scripts and storyboards, and oversaw the production of news reels. Conducted numerous interviews for news projects, gaining insights into legal aspects such as liability and relevant laws associated with news reporting.",
   },
 ];
 const companyData = [
@@ -21,7 +21,7 @@ const companyData = [
     companyTitle: "Jr. Software Engineer @ Swimply",
     image: images.swimply,
     company:
-      "Swimply, headquartered in Los Angeles, California, is a startup that operates a platform enabling people to rent private swimming pools for their enjoyment. Users can book pools through the website or mobile app, facilitating a connection between pool owners and individuals looking for a private and personalized swimming experience. I initially started as a contractor and was hired full time in which my role involved developing features and resolving issues for both web and mobile platforms. Coded in Typescript and JavaScript with React, utilizing hooks. Executed software changes based on specific design specifications on Figma. Added tracking events with Segment tracking to collect user data for informed product decisions. Implemented and updated components under the direction of Senior Software Engineers. Worked in an agile environment with daily stand-ups, retrospectives, sprints, and scrums. Conducted quality assurance, reviewed, committed, and approved pull requests using Git workflow on GitHub.",
+      "Swimply, headquartered in Los Angeles, California, is a startup that operates a platform enabling people to rent private swimming pools for their enjoyment. Users can book pools through the website or mobile app, facilitating a connection between pool owners and individuals looking for a private and personalized swimming experience. I initially started as a contractor and was hired full-time in which my role involved developing features and resolving issues for both web and mobile platforms. Coded in Typescript and JavaScript with React, utilizing hooks. Executed software changes based on specific design specifications on Figma. Added tracking events with Segment tracking to collect user data for informed product decisions. Implemented and updated components under the direction of Senior Software Engineers. Worked in an agile environment with daily stand-ups, retrospectives, sprints, and scrums. Conducted quality assurance, reviewed, committed, and approved pull requests using Git workflow on GitHub.",
   },
   {
     companyTitle: "Freelance Contractor",
@@ -36,7 +36,7 @@ const companyData = [
     image: images.UlLogo,
 
     company:
-      "As a member of the Student Technology Enhancement Program (STEP) at the University of Louisiana at Lafayette, my role involved enhancing campus technology and smart classrooms. I employed Adobe Creative Suite to craft designs and edit training videos. I was responsible for formatting the website according to campus guidelines, designing pages to match the university's style. Additionally, I managed content using the Drupal 7 framework, updated the inventory database, and collaborated with co-workers through Microsoft Teams.",
+      "As a member of the Student Technology Enhancement Program (STEP) at the University of Louisiana at Lafayette, my role involved enhancing campus technology and smart classrooms. I employed Adobe Creative Suite to craft designs and edit training videos. I was responsible for formatting the website according to campus guidelines, and designing pages to match the university's style. Additionally, I managed content using the Drupal 7 framework, updated the inventory database, and collaborated with co-workers through Microsoft Teams.",
   },
 ];
 
