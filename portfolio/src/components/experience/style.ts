@@ -47,6 +47,12 @@ const Title = styled.h1`
 const SubTitle = styled.h3`
   margin: 10px;
   color: ${(props) => props.theme.colors.secondTitle};
+
+  ${media.mobile`
+    font-size: .6em;
+   
+
+  `}
 `;
 
 const ExpandButton = styled.button`

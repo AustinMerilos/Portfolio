@@ -69,7 +69,7 @@ const ProjectDescription = styled.p`
 const ProjectLinkGrid = styled.div`
   display: flex;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  gap: 20px;
+  gap: 10px;
   justify-content: center;
 `;
 const ProjectLinks = styled.a`

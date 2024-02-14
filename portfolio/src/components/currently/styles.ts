@@ -23,7 +23,7 @@ const Title = styled.h1`
     content: "";
     position: absolute;
     left: 0%;
-    right: 30%;
+    right: 40%;
     bottom: 0;
     background-color: ${(props) => props.theme.colors.secondary};
     z-index: -1;

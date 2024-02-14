@@ -8,6 +8,7 @@ const FooterContainer = styled.div`
   //background-image: url(${backgroundImages.footerBackGround});
   background-size: cover; /* Adjust as needed */
   background-position: center;
+  font-family: sans-serif;
 
   padding: 12rem 19rem;
   ${media.mobile`

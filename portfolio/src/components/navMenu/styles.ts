@@ -12,6 +12,7 @@ const NavContainer = styled.div`
   top: 25px;
   right: 25px;
   z-index: 1000;
+
   ${media.mobile`
    
 
@@ -84,6 +85,7 @@ const Title = styled.div`
   color: #cbc9e2;
   letter-spacing: 0.25em;
   text-transform: uppercase;
+  font-family: sans-serif;
 `;
 
 const SocialImage = styled.img`

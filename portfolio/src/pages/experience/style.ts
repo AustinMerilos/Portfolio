@@ -8,6 +8,7 @@ const Container = styled.div`
   background-image: url(${(props) => props.theme.colors.background});
   background-size: cover;
   background-position: center;
+  font-family: sans-serif;
 `;
 
 const Title = styled.h1`
@@ -57,7 +58,7 @@ const InnerContainer = styled.div`
 `;
 
 const Subtitle = styled.h2`
-  font-size: 1.5em;
+  font-size: 1.3em;
   margin-top: 0px;
   color: ${(props) => props.theme.colors.title};
   text-shadow: 0 5px 10px ${(props) => props.theme.colors.titleOutline};
