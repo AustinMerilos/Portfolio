@@ -35,15 +35,15 @@ const greenTheme: Theme = {
 const khakieTheme: Theme = {
   colors: {
     primary: "#eae8dd",
-    secondary: "#6C5F5B",
+    secondary: "#a8a09f",
     titleOutline: "rgba(0, 0, 0, 0.1)",
     secondTitle: "white",
     text: "black",
     button: "white",
-    title: "#40A2E3",
+    title: "#40d0ff",
     background: backgroundImages.khakiBackGround,
     menuButton: "white",
-    extraColor: "#40A2E3",
+    extraColor: "#40d0ff",
     imageOutline: "#eae8dd",
   },
 };
