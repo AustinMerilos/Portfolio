@@ -63,6 +63,17 @@ const ExpandButton = styled.button`
     background-color: ${(props) => props.theme.colors.extraColor};
     color: ${(props) => props.theme.colors.secondTitle};
   }
+  ${media.mobile`
+  width: 20px;
+  height: 20px;
+   
+
+  `}
+  ${media.desktop`
+  width: 30px;
+  height: 30px;
+   
+  `}
 `;
 
 const ExperienceInnerContainer = styled.div`
