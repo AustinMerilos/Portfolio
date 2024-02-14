@@ -82,16 +82,16 @@ const lightTheme: Theme = {
 const darkTheme: Theme = {
   colors: {
     primary: "#2e323a",
-    secondary: "#6cd4be",
-    titleOutline: "rgba(0, 0, 0, 0.3)",
+    secondary: "#4a9173",
+    titleOutline: "rgba(0, 0, 0, 0.5)",
     secondTitle: "white",
     text: "#ecf0f1",
     button: "white",
-    title: "#c2292f",
+    title: "#e14953",
     background: backgroundImages.blackBackGround,
     menuButton: "white",
-    extraColor: "#c2292f",
-    imageOutline: "#6cd4be",
+    extraColor: "#e14953",
+    imageOutline: "#4a9173",
   },
 };
 const pinkTheme: Theme = {
