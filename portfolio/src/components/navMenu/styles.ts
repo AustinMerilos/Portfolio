@@ -45,7 +45,7 @@ const MenuButton = styled(MenuIcon)`
   && {
     width: 50px;
     height: 50px;
-    color: ${(props) => props.theme.colors.secondTitle};
+    color: ${(props) => props.theme.colors.menuButton};
 
     ${media.mobile`
      width: 20px;
@@ -66,14 +66,14 @@ const MenuOpenedButton = styled(MenuOpenIcon)`
   && {
     width: 50px;
     height: 50px;
-    color: ${(props) => props.theme.colors.title};
+    color: ${(props) => props.theme.colors.extraColor};
   }
 `;
 const ThemeIcon = styled(PaletteSharpIcon)`
   && {
     width: 30px;
     height: 30px;
-    color: ${(props) => props.theme.colors.title};
+    color: ${(props) => props.theme.colors.extraColor};
   }
 `;
 

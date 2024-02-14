@@ -60,7 +60,7 @@ const ExpandButton = styled.button`
   font-size: 25px;
 
   &:hover {
-    background-color: ${(props) => props.theme.colors.title};
+    background-color: ${(props) => props.theme.colors.extraColor};
     color: ${(props) => props.theme.colors.secondTitle};
   }
 `;
@@ -145,7 +145,7 @@ const SkillContainer = styled.div`
 
 const SkillItem = styled.p`
   background-color: ${(props) => props.theme.colors.title};
-  color: white;
+  color: ${(props) => props.theme.colors.menuButton};
   padding: 6px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);

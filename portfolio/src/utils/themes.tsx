@@ -10,32 +10,41 @@ export interface Theme {
     secondTitle: string;
     text: string;
     background: string;
+    menuButton: string;
+    extraColor: string;
+    imageOutline: string;
   };
 }
 
 const greenTheme: Theme = {
   colors: {
-    primary: "#cdf7e5",
-    secondary: "#c2b280",
-    titleOutline: "rgba(0, 0, 0, 0.1)",
+    primary: "#43766C",
+    secondary: "#B19470",
+    titleOutline: "rgba(113, 113, 113)",
     secondTitle: "white",
-    text: "black",
+    text: "white",
     button: "white",
-    title: "#1abc9c",
+    title: "#F8FAE5",
     background: backgroundImages.greenBackGround,
+    menuButton: "black",
+    extraColor: "#76453B",
+    imageOutline: "#76453B",
   },
 };
 
 const khakieTheme: Theme = {
   colors: {
     primary: "#eae8dd",
-    secondary: "#948775",
+    secondary: "#6C5F5B",
     titleOutline: "rgba(0, 0, 0, 0.1)",
     secondTitle: "white",
     text: "black",
     button: "white",
-    title: "#305d9d",
+    title: "#40A2E3",
     background: backgroundImages.khakiBackGround,
+    menuButton: "white",
+    extraColor: "#40A2E3",
+    imageOutline: "#eae8dd",
   },
 };
 const yellowTheme: Theme = {
@@ -48,6 +57,9 @@ const yellowTheme: Theme = {
     button: "white",
     title: "#ed6a5a",
     background: backgroundImages.yellowBackgGround,
+    menuButton: "white",
+    extraColor: "#ed6a5a",
+    imageOutline: "#9bc1bc",
   },
 };
 
@@ -61,6 +73,9 @@ const lightTheme: Theme = {
     button: "white",
     title: "#fc7753",
     background: backgroundImages.whiteBackGround,
+    menuButton: "white",
+    extraColor: "#fc7753",
+    imageOutline: "#66d7d1",
   },
 };
 
@@ -74,6 +89,9 @@ const darkTheme: Theme = {
     button: "white",
     title: "#c2292f",
     background: backgroundImages.blackBackGround,
+    menuButton: "white",
+    extraColor: "#c2292f",
+    imageOutline: "#6cd4be",
   },
 };
 const pinkTheme: Theme = {
@@ -86,6 +104,9 @@ const pinkTheme: Theme = {
     button: "white",
     title: "#c7585c",
     background: backgroundImages.pinkThemeBackGround,
+    menuButton: "white",
+    extraColor: "#c7585c",
+    imageOutline: "#6c9a8b",
   },
 };
 

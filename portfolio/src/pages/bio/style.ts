@@ -17,7 +17,7 @@ const Title = styled.h1`
   margin-bottom: 10px;
   text-align: center;
   color: ${(props) => props.theme.colors.title};
-  text-shadow: 0 5px 10px ${(props) => props.theme.colors.titleOutline};
+  text-shadow: 0 3px 10px ${(props) => props.theme.colors.titleOutline};
 `;
 
 const Subtitle = styled.h2`
@@ -51,7 +51,7 @@ const Image = styled(InlineSVG)`
 
   path {
     fill: ${(props) => props.theme.colors.title};
-    stroke: ${(props) => props.theme.colors.text};
+    stroke: ${(props) => props.theme.colors.imageOutline};
   }
 
   ${media.tablet`
