@@ -18,7 +18,7 @@ const sizes: MediaSizes = {
   mobile: 425,
   tablet: 768,
   desktop: 1024,
-  largeDesktop: 1200,
+  largeDesktop: 2560,
 };
 
 const media = (Object.keys(sizes) as Array<keyof MediaSizes>).reduce(

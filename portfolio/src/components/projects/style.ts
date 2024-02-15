@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import media from "../../utils/styleSizes";
 
 const ProjectContainer = styled.section`
   padding: 3% 5%;
@@ -64,6 +65,11 @@ const ProjectTitle = styled.h1`
 const ProjectDescription = styled.p`
   margin-bottom: 25px;
   height: 250px;
+
+  ${media.largeDesktop`
+   height: 310px;
+
+  `}
 `;
 
 const ProjectLinkGrid = styled.div`
