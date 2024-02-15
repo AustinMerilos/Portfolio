@@ -8,7 +8,7 @@ const Container = styled.div`
   background-image: url(${(props) => props.theme.colors.background});
   background-size: cover;
   background-position: center;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
 `;
 
 const Title = styled.h1`
