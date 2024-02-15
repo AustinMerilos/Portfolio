@@ -6,7 +6,7 @@ export const projectData = [
     description:
       "Interested in how I created this website? Check out the code! The goal of this website was to play around with styling and animation along with creating a professional portfolio website for myself to showcase my skills and talents for future job prospects.",
     image: images.personalWebsite,
-    source: "/",
+    source: "https://github.com/AustinMerilos/Portfolio",
     liveSource: "/",
   },
   {
