@@ -133,7 +133,7 @@ const CompanyLogo = styled.img`
 const SkillContainer = styled.div`
   display: flex;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  gap: 5px;
+  gap: 3px;
   padding: 16px;
   justify-content: left;
 

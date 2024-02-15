@@ -58,7 +58,7 @@ const ProjectImage = styled.img`
 
 const ProjectTitle = styled.h1`
   margin-bottom: 10px;
-  color: ${(props) => props.theme.colors.title};
+  color: ${(props) => props.theme.colors.extraColor};
   //text-shadow: 1px 0.5px 2px ${(props) => props.theme.colors.titleOutline};
 `;
 const ProjectDescription = styled.p`
