@@ -2,6 +2,25 @@ import images from "../../assets/images";
 
 export const experiencesData = [
   {
+    title: "Grants & Contracts Manager at MIRM ",
+    content:
+      "Streamline project workflows, manage data efficiently, and ensure precise reporting.",
+    date: "2025 - Current",
+    link: "MIRM",
+    image: images.pitt,
+    skills: ["Data Managment", "Communication", "Monitoring", "Governance"],
+    website: "https://mirm-pitt.net/",
+  },
+  {
+    title: "Consultant at BBCAA inc",
+    content:
+      "Developed and maintained website content, ensuring accuracy and relevance.",
+    date: "2024",
+    link: "",
+    image: images.BCCA,
+    skills: ["API", "CMS", "Roles & Permissions", "Database Integration"],
+  },
+  {
     title: "Jr. Software Engineer at Swimply",
     content:
       "Developing front-end and mobile app solutions for pool hosting services on the React framework.",
