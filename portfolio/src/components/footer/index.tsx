@@ -49,7 +49,7 @@ export const Footer = () => {
         <Divider />
 
         <SocialContainer>
-          <CopyRight>© Austin Merilos 2024</CopyRight>
+          <CopyRight>© Austin Merilos {new Date().getFullYear()}</CopyRight>
           <SocialInnerContainer>
             <ContactLink
               href="https://www.linkedin.com/in/austinmerilos"
