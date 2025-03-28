@@ -15,6 +15,7 @@ import typing from "./typing.svg";
 import world from "./world.svg";
 import personalWebsite from "./personalWebsite.svg";
 import BCCA from "./BCCALogo.svg";
+import pitt from "./pittLogo.svg";
 
 const images = {
   aboutImage,
@@ -34,6 +35,7 @@ const images = {
   world,
   personalWebsite,
   BCCA,
+  pitt,
 };
 
 export default images;
