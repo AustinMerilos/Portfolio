@@ -18,6 +18,19 @@ const eductaionData = [
 ];
 const companyData = [
   {
+    companyTitle:
+      "Grants & Contracts Manager @ Mcgowan Institute for Regenerative Medicine",
+    image: images.pitt,
+    company:
+      "University of Pittsburgh – McGowan Institute of Regenerative Medicine is a leading research institution dedicated to advancing regenerative medicine through interdisciplinary collaboration. As a Grants & Contracts Manager, I oversee the full grant application cycle, from proposal submission to post-award compliance, ensuring strict adherence to deadlines. I utilize Oracle-based financial systems for budget tracking, expenditure reconciliation, and financial reporting while troubleshooting grant application errors and financial discrepancies. Additionally, I integrate Microsoft Teams and Outlook for project management, facilitating cross-functional collaboration between research and finance departments. My role also involves technical communication and documentation, where I explain complex financial data to researchers and administrators—similar to how developers translate technical details for clients, designers, and business analysts. Through detailed technical writing and documentation, I help maintain compliance and streamline grant processes.",
+  },
+  {
+    companyTitle: "Consultant @ Beauregard Community Action Association",
+    image: images.BCCA,
+    company:
+      "Beauregard Community Action Association, Inc. is a nonprofit organization based in DeRidder, LA, dedicated to providing essential services and resources to low-income individuals and families in the community. In my role, I managed and maintained the organization's website, ensuring content accuracy and relevance while integrating third-party nonprofit resources to enhance user experience. I also oversaw grant budgets, ensuring compliance with funding requirements and organizational goals. Additionally, I administered client records, entered data, and coordinated with assistance programs to maintain accurate records. My work involved utilizing REST API requests to fetch and integrate data, providing technical support and training to employees, and collaborating with management to identify website needs that informed strategic decisions. Furthermore, I worked closely with program directors to align funding proposals with the organization’s objectives and community needs.",
+  },
+  {
     companyTitle: "Jr. Software Engineer @ Swimply",
     image: images.swimply,
     company:
