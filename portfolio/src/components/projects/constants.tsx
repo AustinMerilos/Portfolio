@@ -2,6 +2,14 @@ import images from "../../assets/images";
 
 export const projectData = [
   {
+    title: "Journy Chronicles",
+    description:
+      "A travel storytelling web app that features interactive maps, curated destination highlights, and blog-style posts pulled from a WordPress API. Built with React, TypeScript, Leaflet.js, and styled-components, the site offers dynamic filtering, and responsive carousels to inspire and guide global adventures.",
+    image: images.journeyChronicles,
+    source: "https://github.com/AustinMerilos/Journey_Chronicles",
+    liveSource: "https://austinmerilos.github.io/Journey_Chronicles/",
+  },
+  {
     title: "Personal Website",
     description:
       "Interested in how I created this website? Check out the code! The goal of this website was to play around with styling and animation along with creating a professional portfolio website for myself to showcase my skills and talents for future job prospects.",

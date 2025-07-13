@@ -16,8 +16,10 @@ import world from "./world.svg";
 import personalWebsite from "./personalWebsite.svg";
 import BCCA from "./BCCALogo.svg";
 import pitt from "./pittLogo.svg";
+import journeyChronicles from "./journeyChronicles.png";
 
 const images = {
+  journeyChronicles,
   aboutImage,
   homeStead,
   goldenFoodie,
