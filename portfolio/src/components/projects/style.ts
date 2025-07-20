@@ -55,14 +55,13 @@ const SingleProjectContainer = styled.div`
   border-radius: 20px;
   border: solid 1.5px ${(props) => props.theme.colors.secondary};
 `;
-
 const ProjectImage = styled.img`
-  width: 60%;
+  max-width: 60%;
+  width: 100%;
   height: auto;
   border-radius: 5px;
-  object-fit: cover;
-  margin-bottom: 10px;
-  align-self: center;
+  display: block;
+  margin: 0 auto 10px auto;
 `;
 
 const ProjectTitle = styled.h1`
