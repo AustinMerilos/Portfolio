@@ -32,29 +32,37 @@ const Title = styled.h1`
 `;
 const ProjectInnerGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  gap: 100px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  align-items: stretch;
 
-  justify-content: center;
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
 `;
-const SingleProjectContainer = styled.div`
-  background-color: white;
-  border-radius: 20px;
-  //box-shadow: 12px 12px 2px 1px ${(props) => props.theme.colors.secondary};
-  border: solid 1.5px ${(props) => props.theme.colors.secondary};
 
-  padding: 5%;
-  contain: content;
+const SingleProjectContainer = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  padding: 3%;
+  background-color: white;
+  border-radius: 20px;
+  border: solid 1.5px ${(props) => props.theme.colors.secondary};
 `;
 
 const ProjectImage = styled.img`
-  margin-bottom: 5px;
+  width: 60%;
+  height: auto;
   border-radius: 5px;
-  height: 150px;
   object-fit: cover;
+  margin-bottom: 10px;
+  align-self: center;
 `;
 
 const ProjectTitle = styled.h1`
@@ -63,21 +71,19 @@ const ProjectTitle = styled.h1`
   //text-shadow: 1px 0.5px 2px ${(props) => props.theme.colors.titleOutline};
 `;
 const ProjectDescription = styled.p`
-  margin-bottom: 25px;
-  height: 250px;
-
-  ${media.largeDesktop`
-   height: 310px;
-
-  `}
+  margin-bottom: 10px;
+  flex-grow: 1;
+  height: auto;
 `;
 
 const ProjectLinkGrid = styled.div`
   display: flex;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   gap: 10px;
   justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 10px; /* optional */
 `;
+
 const ProjectLinks = styled.a`
   && {
     background-color: #1b2e35;
