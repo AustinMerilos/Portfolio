@@ -18,8 +18,7 @@ const Image = styled(InlineSVG)`
     stroke: ${(props) => props.theme.colors.secondary};
   }
   ${media.mobile`
-   max-width: 0;
-   
+   display: none;
 
   `}
 `;
