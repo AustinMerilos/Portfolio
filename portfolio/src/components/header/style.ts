@@ -2,44 +2,34 @@ import { styled } from "styled-components";
 import media from "../../utils/styleSizes";
 
 const HeaderSection = styled.section`
-  padding: 6rem;
+  padding: 10rem;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 100px;
+  gap: 300px;
 
   background-image: url(${(props) => props.theme.colors.background});
   background-size: cover;
   background-position: center;
 
-  ${media.desktop`
-   display: flex;
-   flex-wrap: wrap;
-   padding: 6rem;
-   gap: 3rem;
+  ${media.mobile`
+    padding: 4rem;
+    display: contents;
+    background-image: none;
 
   `}
   ${media.tablet`
-   display: flex;
-   flex-wrap: wrap;
-   padding: 3rem;
-   gap: 2rem;
-   justify-content: center;
-
+   display:flow;
+   
   `}
-  ${media.mobile`
-    padding: 3rem 1.5rem;
-    display: block;
-    background-image: none;
-
+  ${media.desktop`
+   display:flow;
+   
   `}
 `;
 
 const HeaderContainer = styled.div`
   max-width: 800px;
-  width: 100%;
   margin: 0 auto;
-  display: block;
+  display: inline-block;
 `;
 
 const HeaderContent = styled.div`
@@ -63,9 +53,7 @@ const Name = styled.span`
 
   `}
   ${media.mobile`
-    font-size: 2.1em;
-    max-width: 100%;
-    overflow-wrap: break-word;
+    font-size: 2.5em;
 
   `}
 `;
@@ -98,9 +86,7 @@ const Title = styled.span`
 
   `}
   ${media.mobile`
-    font-size: 2.1em;
-    max-width: 100%;
-    overflow-wrap: break-word;
+    font-size: 2.5em;
 
   `}
 `;

@@ -47,7 +47,8 @@ const Image = styled(desktop)`
     stroke: ${(props) => props.theme.colors.primary};
   }
   ${media.mobile`
-     display: none;
+     max-width: 0;
+   
 
   `}
 `;

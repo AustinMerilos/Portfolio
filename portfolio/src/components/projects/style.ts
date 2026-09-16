@@ -65,13 +65,13 @@ const ProjectImage = styled.img`
 
 const ProjectTitle = styled.h3`
   margin-bottom: 10px;
-  color: #1b2e35;
+  color: ${(props) => props.theme.colors.extraColor};
+  //text-shadow: 1px 0.5px 2px ${(props) => props.theme.colors.titleOutline};
 `;
 const ProjectDescription = styled.p`
   margin-bottom: 10px;
   flex-grow: 1;
   height: auto;
-  color: #1b2e35;
 `;
 
 const ProjectLinkGrid = styled.div`
