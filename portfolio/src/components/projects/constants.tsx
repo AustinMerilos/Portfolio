@@ -2,7 +2,7 @@ import images from "../../assets/images";
 
 export const projectData = [
   {
-    title: "Journy Chronicles",
+    title: "Journey Chronicles",
     description:
       "A travel storytelling web app that features interactive maps, curated destination highlights, and blog-style posts pulled from a WordPress API. Built with React, TypeScript, Leaflet.js, and styled-components, the site offers dynamic filtering, and responsive carousels to inspire and guide global adventures.",
     image: images.journeyChronicles,

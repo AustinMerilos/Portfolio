@@ -72,8 +72,14 @@ const NavMenu = () => {
 
   return (
     <>
-      <NavContainer theme={theme}>
-        <NavButton onClick={() => setIsMenuOpen((open) => !open)} theme={theme}>
+      <NavContainer theme={theme} aria-label="Site navigation">
+        <NavButton
+          onClick={() => setIsMenuOpen((open) => !open)}
+          theme={theme}
+          aria-label="Open navigation menu"
+          aria-haspopup="true"
+          aria-expanded={isMenuOpen}
+        >
           <MenuButton theme={theme} />
         </NavButton>
       </NavContainer>
@@ -92,10 +98,18 @@ const NavMenu = () => {
           >
             <motion.div variants={itemVariants} transition={itemTransition}>
               <ButtonContainer>
-                <Button onClick={toggleTheme} theme={theme}>
+                <Button
+                  onClick={toggleTheme}
+                  theme={theme}
+                  aria-label="Switch color theme"
+                >
                   <ThemeIcon theme={theme} />
                 </Button>
-                <Button onClick={handleCloseMenu} theme={theme}>
+                <Button
+                  onClick={handleCloseMenu}
+                  theme={theme}
+                  aria-label="Close navigation menu"
+                >
                   <MenuOpenedButton theme={theme} />
                 </Button>
               </ButtonContainer>
@@ -157,11 +171,16 @@ const NavMenu = () => {
                 <Link
                   href="https://www.linkedin.com/in/austinmerilos"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  <SocialImage src={images.linkedin} />
+                  <SocialImage src={images.linkedin} alt="LinkedIn profile" />
                 </Link>
-                <Link href="https://github.com/AustinMerilos" target="_blank">
-                  <SocialImage src={images.github} />
+                <Link
+                  href="https://github.com/AustinMerilos"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <SocialImage src={images.github} alt="GitHub profile" />
                 </Link>
               </div>
             </motion.div>

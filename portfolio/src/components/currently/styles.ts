@@ -13,7 +13,7 @@ const TextContainer = styled.div`
   padding: 0 5%;
 `;
 
-const Title = styled.h1`
+const Title = styled.h2`
   position: relative;
   font-size: 2.5em;
   color: ${(props) => props.theme.colors.title};

@@ -4,7 +4,7 @@ import media from "../../utils/styleSizes";
 
 const Container = styled.div`
   background-color: ${(props) => props.theme.colors.primary};
-  color: ${(props) => props.theme.colors.darkText};
+  color: ${(props) => props.theme.colors.text};
   display: flex;
   background-image: url(${(props) => props.theme.colors.background});
   background-size: cover;

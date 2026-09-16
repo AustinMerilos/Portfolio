@@ -1,7 +1,7 @@
 import { useTheme } from "../../utils/themeContext";
 import Company from "./company";
 import Education from "./education";
-import { Container, Content, Title } from "./style";
+import { Container, Content, PageHeading, Title } from "./style";
 import { motion } from "framer-motion";
 
 const ExperiencePage = () => {
@@ -9,6 +9,7 @@ const ExperiencePage = () => {
   return (
     <Container theme={theme}>
       <Content>
+        <PageHeading>Experience</PageHeading>
         <motion.div whileHover={{ scale: 1.1 }} transition={{ duration: 0.3 }}>
           <Title theme={theme}>Education</Title>
         </motion.div>

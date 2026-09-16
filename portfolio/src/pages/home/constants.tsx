@@ -8,7 +8,7 @@ export const experiencesData = [
     date: "2025 - Current",
     link: "MIRM",
     image: images.pitt,
-    skills: ["Data Managment", "Communication", "Monitoring", "Governance"],
+    skills: ["Data Management", "Communication", "Monitoring", "Governance"],
     website: "https://mirm-pitt.net/",
   },
   {
@@ -59,7 +59,7 @@ export const experiencesData = [
       "Drupal",
       "CSS",
       "HTML",
-      "MicroSoft Suite",
+      "Microsoft Suite",
       "Adobe Creative Suite",
     ],
     website: "https://step.louisiana.edu/",

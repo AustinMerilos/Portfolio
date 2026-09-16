@@ -54,14 +54,16 @@ export const Footer = () => {
             <ContactLink
               href="https://www.linkedin.com/in/austinmerilos"
               target="_blank"
+              rel="noopener noreferrer"
             >
-              <SocialImage src={images.linkedin} />
+              <SocialImage src={images.linkedin} alt="LinkedIn profile" />
             </ContactLink>
             <ContactLink
               href="https://github.com/AustinMerilos"
               target="_blank"
+              rel="noopener noreferrer"
             >
-              <SocialImage src={images.github} />
+              <SocialImage src={images.github} alt="GitHub profile" />
             </ContactLink>
           </SocialInnerContainer>
         </SocialContainer>

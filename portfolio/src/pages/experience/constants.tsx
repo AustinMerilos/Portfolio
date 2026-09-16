@@ -3,14 +3,14 @@ import images from "../../assets/images";
 const eductaionData = [
   {
     educationTitle:
-      "B.S in Computer Informatics - University of Louisiana at Lafaytte May 2020",
+      "B.S in Computer Informatics - University of Louisiana at Lafayette May 2020",
     educationHeading: "Relevant Coursework/projects:",
     education:
       "Collaborated with a group of peers to develop a supervised machine learning algorithm in Python aimed at identifying instances of Medicare fraud for a local software company. Designed a Python script to extract data from CSV files and generate predictions using a random forest algorithm. Applied Agile Methodologies, integrating daily stand-ups, retrospectives, and scrum meetings into our development workflow. Utilized Jira project management software to generate tickets and monitor project deadlines. Established a Medicare fraud database with PostgreSQL and crafted a UI mockup and presentation using Tableau.",
   },
   {
     educationTitle:
-      "B.A in Mass Communication - University of Louisiana at Lafaytte December 2018",
+      "B.A in Mass Communication - University of Louisiana at Lafayette December 2018",
     educationHeading: "Relevant Coursework/projects:",
     education:
       "Contributed to diverse projects encompassing audio and video production. Produced student documentaries and newsreels, managing camera and stage equipment. Utilized video and audio editing software Adobe Premiere and Audition, wrote scripts and storyboards, and oversaw the production of news reels. Conducted numerous interviews for news projects, gaining insights into legal aspects such as liability and relevant laws associated with news reporting.",

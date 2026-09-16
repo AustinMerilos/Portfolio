@@ -3,7 +3,7 @@ import { styled } from "styled-components";
 import media from "../../utils/styleSizes";
 import backgroundImages from "../../assets/backgrounds";
 
-const FooterContainer = styled.div`
+const FooterContainer = styled.footer`
   background-color: ${(props) => props.theme.colors.secondary};
   //background-image: url(${backgroundImages.footerBackGround});
   background-size: cover; /* Adjust as needed */

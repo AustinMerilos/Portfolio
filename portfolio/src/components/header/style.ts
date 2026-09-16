@@ -38,7 +38,13 @@ const HeaderContent = styled.div`
   margin-top: 100px;
   gap: 25px;
 `;
-const Name = styled.div`
+const Heading = styled.h1`
+  margin: 0;
+  font-weight: normal;
+`;
+
+const Name = styled.span`
+  display: block;
   font-size: 4.5em;
   color: ${(props) => props.theme.colors.title};
   text-shadow: 0 5px 10px ${(props) => props.theme.colors.titleOutline};
@@ -48,7 +54,8 @@ const Name = styled.div`
   `}
 `;
 
-const Title = styled.h1`
+const Title = styled.span`
+  display: inline-block;
   position: relative;
   font-size: 4.5em;
   margin: 10px;
@@ -99,6 +106,7 @@ const HeadShot = styled.img`
 
 export {
   Title,
+  Heading,
   HeaderContainer,
   HeaderSection,
   HeaderContent,

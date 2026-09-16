@@ -8,7 +8,7 @@ const Education = () => {
   return (
     <div>
       {eductaionData.map((education) => (
-        <AnimatedComponent>
+        <AnimatedComponent key={education.educationTitle}>
           <InnerContainer>
             <div>
               <Subtitle theme={theme}>{education.educationTitle}</Subtitle>

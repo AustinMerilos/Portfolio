@@ -23,17 +23,29 @@ const BioPage = () => {
         </motion.div>
 
         {bioData.map((data) => (
-          <AnimatedComponent>
+          <AnimatedComponent key={data.title}>
             <Subtitle theme={theme}>{data.title}</Subtitle>
             <InnerContainer>
-              <Image theme={theme} src={data.image2 || ""} />
+              {data.image2 && (
+                <Image
+                  theme={theme}
+                  src={data.image2}
+                  title={`${data.title} illustration`}
+                />
+              )}
 
               <div>
                 <Paragraph theme={theme}>{data.paragraph1}</Paragraph>
                 <Paragraph theme={theme}>{data.paragraph2}</Paragraph>
               </div>
 
-              <Image theme={theme} src={data.image || ""} />
+              {data.image && (
+                <Image
+                  theme={theme}
+                  src={data.image}
+                  title={`${data.title} illustration`}
+                />
+              )}
             </InnerContainer>
           </AnimatedComponent>
         ))}

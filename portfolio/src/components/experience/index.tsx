@@ -50,6 +50,10 @@ const ExperienceSection = ({ experiences, theme }: any) => {
                     <ExpandButton
                       onClick={() => handleButtonClick(index)}
                       theme={theme}
+                      aria-expanded={expandedItem === index}
+                      aria-label={`${
+                        expandedItem === index ? "Collapse" : "Expand"
+                      } details for ${experience.title}`}
                     >
                       {expandedItem === index ? "-" : "+"}
                     </ExpandButton>
@@ -70,10 +74,18 @@ const ExperienceSection = ({ experiences, theme }: any) => {
                       <div key={index}>
                         <InnerGridContainer>
                           <div>
-                            <WebsiteImage></WebsiteImage>
-                            <Website href={experience.website}>
-                              {experience.link}
-                            </Website>
+                            {experience.website && (
+                              <>
+                                <WebsiteImage aria-hidden="true" />
+                                <Website
+                                  href={experience.website}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                >
+                                  {experience.link}
+                                </Website>
+                              </>
+                            )}
 
                             <Description>{experience.content}</Description>
                             {experience.skills && (

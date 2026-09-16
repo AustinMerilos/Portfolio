@@ -8,11 +8,14 @@ const Company = () => {
   return (
     <>
       {companyData.map((company) => (
-        <div>
+        <div key={company.companyTitle}>
           <AnimatedComponent>
             <Subtitle theme={theme}>{company.companyTitle}</Subtitle>
             <InnerContainer>
-              <CompanyImage src={company.image} />
+              <CompanyImage
+                src={company.image}
+                alt={`Company logo for ${company.companyTitle}`}
+              />
               <Paragraph theme={theme}>{company.company}</Paragraph>
             </InnerContainer>
           </AnimatedComponent>

@@ -2,6 +2,7 @@ import React from "react";
 import {
   HeaderSection,
   Title,
+  Heading,
   Subtitle,
   Paragraph,
   HeaderContent,
@@ -18,7 +19,7 @@ export const Header: React.FC<{ theme: Theme }> = ({ theme }) => {
     <HeaderSection theme={theme}>
       <div>
         <HeaderContainer>
-          <>
+          <Heading>
             <Name theme={theme}>Hi I'm Austin! Frontend</Name>
 
             <motion.div
@@ -27,7 +28,7 @@ export const Header: React.FC<{ theme: Theme }> = ({ theme }) => {
             >
               <Title theme={theme}>Developer</Title>
             </motion.div>
-          </>
+          </Heading>
 
           <Subtitle theme={theme}>
             I enjoy crafting solid and responsive front-end products for great
@@ -47,7 +48,7 @@ export const Header: React.FC<{ theme: Theme }> = ({ theme }) => {
         </HeaderContent>
       </div>
       <div>
-        <HeadShot src={images.headShot}></HeadShot>
+        <HeadShot src={images.headShot} alt="Headshot of Austin Merilos" />
       </div>
     </HeaderSection>
   );

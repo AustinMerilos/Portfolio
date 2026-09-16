@@ -19,7 +19,7 @@ const ExperineceOutterContainer = styled.section`
   `}
 `;
 
-const Title = styled.h1`
+const Title = styled.h2`
   position: relative;
   font-size: 2.5em;
   margin-bottom: 10px;
@@ -67,7 +67,7 @@ const ExpandButton = styled.button`
 
   &:hover {
     background-color: ${(props) => props.theme.colors.extraColor};
-    color: ${(props) => props.theme.colors.secondTitle};
+    color: ${(props) => props.theme.colors.accentText};
   }
 `;
 
@@ -108,7 +108,7 @@ const GridContainer = styled.div`
   padding: 5px;
 
   background-color: ${(props) => props.theme.colors.secondary};
-  color: ${(props) => props.theme.colors.darkText};
+  color: ${(props) => props.theme.colors.secondTitle};
 
   border-radius: 15px;
   margin-bottom: 15px;

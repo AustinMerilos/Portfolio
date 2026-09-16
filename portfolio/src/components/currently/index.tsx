@@ -31,7 +31,7 @@ const CurrentlySection: React.FC<{ theme: Theme }> = ({ theme }) => {
             <SubTitle theme={theme}>{paragraph.paragraph.fifth}</SubTitle>
           </TextContainer>
 
-          <Image theme={theme} />
+          <Image theme={theme} aria-hidden="true" />
         </CurrentlyContainerInnerContainer>
       </AnimatedComponent>
     </CurrentlyContainer>

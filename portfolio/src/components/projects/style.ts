@@ -1,11 +1,10 @@
 import styled from "styled-components";
-import media from "../../utils/styleSizes";
 
 const ProjectContainer = styled.section`
   padding: 3% 5%;
 `;
 
-const Title = styled.h1`
+const Title = styled.h2`
   position: relative;
   font-size: 2.5em;
   margin: 10px;
@@ -64,7 +63,7 @@ const ProjectImage = styled.img`
   margin: 0 auto 10px auto;
 `;
 
-const ProjectTitle = styled.h1`
+const ProjectTitle = styled.h3`
   margin-bottom: 10px;
   color: ${(props) => props.theme.colors.extraColor};
   //text-shadow: 1px 0.5px 2px ${(props) => props.theme.colors.titleOutline};

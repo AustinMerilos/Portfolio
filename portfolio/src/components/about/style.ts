@@ -27,7 +27,7 @@ const Image = styled(InlineSVG)`
 const InnerContainer = styled.div`
   display: inline-block;
 `;
-const Title = styled.h1`
+const Title = styled.h2`
   position: relative;
   font-size: 2.5em;
   margin: 25px;

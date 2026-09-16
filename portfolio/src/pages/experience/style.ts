@@ -3,7 +3,7 @@ import media from "../../utils/styleSizes";
 
 const Container = styled.div`
   background-color: ${(props) => props.theme.colors.primary};
-  color: ${(props) => props.theme.colors.darkText};
+  color: ${(props) => props.theme.colors.text};
   display: flex;
   background-image: url(${(props) => props.theme.colors.background});
   background-size: cover;
@@ -11,7 +11,19 @@ const Container = styled.div`
   font-family: "Roboto", sans-serif;
 `;
 
-const Title = styled.h1`
+const PageHeading = styled.h1`
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+`;
+
+const Title = styled.h2`
   position: relative;
   font-size: 3em;
   margin-bottom: 10px;
@@ -95,6 +107,7 @@ export {
   Subtitle,
   InnerContainer,
   Title,
+  PageHeading,
   Container,
   Content,
   CompanyImage,

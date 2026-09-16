@@ -29,7 +29,7 @@ export default function SingleProject({
   return (
     <AnimatedComponent>
       <SingleProjectContainer theme={theme}>
-        <ProjectImage src={image} />
+        <ProjectImage src={image} alt={title || "Upcoming project preview"} />
         <ProjectTitle theme={theme}>{title}</ProjectTitle>
         <ProjectDescription theme={theme}>{description}</ProjectDescription>
         <ProjectLinkGrid>

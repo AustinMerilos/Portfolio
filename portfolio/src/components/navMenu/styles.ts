@@ -6,7 +6,7 @@ import MenuIcon from "@material-ui/icons/Menu";
 import styled from "styled-components";
 import media from "../../utils/styleSizes";
 
-const NavContainer = styled.div`
+const NavContainer = styled.nav`
   background-color: transparent;
   position: fixed;
   top: 25px;
@@ -67,14 +67,14 @@ const MenuOpenedButton = styled(MenuOpenIcon)`
   && {
     width: 50px;
     height: 50px;
-    color: ${(props) => props.theme.colors.extraColor};
+    color: ${(props) => props.theme.colors.menuButton};
   }
 `;
 const ThemeIcon = styled(PaletteSharpIcon)`
   && {
     width: 30px;
     height: 30px;
-    color: ${(props) => props.theme.colors.extraColor};
+    color: ${(props) => props.theme.colors.menuButton};
   }
 `;
 

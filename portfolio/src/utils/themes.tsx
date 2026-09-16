@@ -13,6 +13,7 @@ export interface Theme {
     menuButton: string;
     extraColor: string;
     imageOutline: string;
+    accentText: string;
   };
 }
 
@@ -21,14 +22,15 @@ const greenTheme: Theme = {
     primary: "#43766C",
     secondary: "#B19470",
     titleOutline: "rgba(113, 113, 113)",
-    secondTitle: "white",
+    secondTitle: "black",
     text: "white",
-    button: "white",
+    button: "black",
     title: "#F8FAE5",
     background: backgroundImages.greenBackGround,
     menuButton: "black",
     extraColor: "#76453B",
     imageOutline: "#76453B",
+    accentText: "white",
   },
 };
 
@@ -37,14 +39,15 @@ const khakieTheme: Theme = {
     primary: "#eae8dd",
     secondary: "#a8a09f",
     titleOutline: "rgba(0, 0, 0, 0.1)",
-    secondTitle: "white",
+    secondTitle: "black",
     text: "black",
-    button: "white",
+    button: "black",
     title: "#40d0ff",
     background: backgroundImages.khakiBackGround,
-    menuButton: "white",
+    menuButton: "black",
     extraColor: "#40d0ff",
     imageOutline: "#eae8dd",
+    accentText: "black",
   },
 };
 const yellowTheme: Theme = {
@@ -52,14 +55,15 @@ const yellowTheme: Theme = {
     primary: "#f4f1bb",
     secondary: "#9bc1bc",
     titleOutline: "rgba(0, 0, 0, 0.3)",
-    secondTitle: "white",
+    secondTitle: "black",
     text: "black",
-    button: "white",
+    button: "black",
     title: "#ed6a5a",
     background: backgroundImages.yellowBackgGround,
-    menuButton: "white",
+    menuButton: "black",
     extraColor: "#ed6a5a",
     imageOutline: "#9bc1bc",
+    accentText: "black",
   },
 };
 
@@ -68,14 +72,15 @@ const lightTheme: Theme = {
     primary: "#f2efea",
     secondary: "#66d7d1",
     titleOutline: "rgba(0, 0, 0, 0.2)",
-    secondTitle: "white",
+    secondTitle: "black",
     text: "black",
-    button: "white",
+    button: "black",
     title: "#fc7753",
     background: backgroundImages.whiteBackGround,
-    menuButton: "white",
+    menuButton: "black",
     extraColor: "#fc7753",
     imageOutline: "#66d7d1",
+    accentText: "black",
   },
 };
 
@@ -84,14 +89,15 @@ const darkTheme: Theme = {
     primary: "#2e323a",
     secondary: "#4a9173",
     titleOutline: "rgba(0, 0, 0, 0.5)",
-    secondTitle: "white",
+    secondTitle: "black",
     text: "#ecf0f1",
-    button: "white",
+    button: "black",
     title: "#e14953",
     background: backgroundImages.blackBackGround,
-    menuButton: "white",
+    menuButton: "black",
     extraColor: "#e14953",
     imageOutline: "#4a9173",
+    accentText: "black",
   },
 };
 const pinkTheme: Theme = {
@@ -99,14 +105,15 @@ const pinkTheme: Theme = {
     primary: "#e8998d",
     secondary: "#6c9a8b",
     titleOutline: "rgba(0, 0, 0, 0.1)",
-    secondTitle: "white",
+    secondTitle: "black",
     text: "#f7fff7",
-    button: "white",
+    button: "black",
     title: "#c7585c",
     background: backgroundImages.pinkThemeBackGround,
-    menuButton: "white",
+    menuButton: "black",
     extraColor: "#c7585c",
     imageOutline: "#6c9a8b",
+    accentText: "black",
   },
 };
 

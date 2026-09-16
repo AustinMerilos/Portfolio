@@ -1,6 +1,8 @@
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
+import { usePrefersReducedMotion } from "./usePrefersReducedMotion";
+
 const sectionVariant = {
   visible: { opacity: 1, y: 0, x: 0, scale: 1, transition: { duration: 0.5 } },
   hidden: { opacity: 0, y: 0, x: 0, scale: 0.8 },
@@ -9,6 +11,7 @@ const sectionVariant = {
 export const AnimatedComponent = ({ children }: any) => {
   const controls = useAnimation();
   const [ref, inView] = useInView();
+  const prefersReducedMotion = usePrefersReducedMotion();
 
   useEffect(() => {
     if (inView) {
@@ -17,6 +20,10 @@ export const AnimatedComponent = ({ children }: any) => {
       controls.start("hidden");
     }
   }, [controls, inView]);
+
+  if (prefersReducedMotion) {
+    return <section>{children}</section>;
+  }
 
   return (
     <motion.section
