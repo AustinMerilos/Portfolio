@@ -1,4 +1,4 @@
-import { Link } from "@material-ui/core";
+import { Link } from "@mui/material";
 import { styled } from "styled-components";
 import media from "../../utils/styleSizes";
 import backgroundImages from "../../assets/backgrounds";
@@ -25,7 +25,9 @@ const FooterInnerContainer = styled.div`
   display: flex;
 
   ${media.mobile`
-   font-size: 0.5em;
+   font-size: 0.8em;
+   flex-direction: column;
+   gap: 24px;
 
   `}
   ${media.tablet`
@@ -40,6 +42,10 @@ const FooterItemContainer = styled.div`
   font-size: 1.1em;
   display: grid;
   color: ${(props) => props.theme.colors.text};
+
+  ${media.mobile`
+    width: auto;
+  `}
 `;
 
 const NavLinks = styled(Link)`

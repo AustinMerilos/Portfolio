@@ -1,8 +1,8 @@
-import { MenuItem, IconButton } from "@material-ui/core";
+import { MenuItem, IconButton } from "@mui/material";
 import MenuOpenIcon from "@mui/icons-material/MenuOpen";
 import PaletteSharpIcon from "@mui/icons-material/PaletteSharp";
 
-import MenuIcon from "@material-ui/icons/Menu";
+import MenuIcon from "@mui/icons-material/Menu";
 import styled from "styled-components";
 import media from "../../utils/styleSizes";
 
@@ -27,7 +27,6 @@ const ListItem = styled(MenuItem)`
   && {
     color: black;
     background-color: white;
-    margin-left: 150px;
   }
 `;
 const ButtonContainer = styled.div`

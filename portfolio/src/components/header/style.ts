@@ -48,6 +48,10 @@ const Name = styled.span`
   font-size: 4.5em;
   color: ${(props) => props.theme.colors.title};
   text-shadow: 0 5px 10px ${(props) => props.theme.colors.titleOutline};
+  ${media.tablet`
+    font-size: 3.2em;
+
+  `}
   ${media.mobile`
     font-size: 2.5em;
 
@@ -77,6 +81,10 @@ const Title = styled.span`
   &:hover::after {
     top: 60%;
   }
+  ${media.tablet`
+    font-size: 3.2em;
+
+  `}
   ${media.mobile`
     font-size: 2.5em;
 

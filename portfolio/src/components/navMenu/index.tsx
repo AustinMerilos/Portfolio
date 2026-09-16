@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link, Menu } from "@material-ui/core";
+import { Link, Menu } from "@mui/material";
 import {
   ListItem,
   Title,
@@ -20,7 +20,8 @@ import { useTheme } from "../../utils/themeContext";
 const NavMenu = () => {
   const { theme } = useTheme();
   const { toggleTheme } = useTheme();
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [anchorEl, setAnchorEl] = useState<HTMLElement | null>(null);
+  const isMenuOpen = Boolean(anchorEl);
 
   useEffect(() => {
     const handleBodyScroll = () => {
@@ -37,7 +38,7 @@ const NavMenu = () => {
   }, [isMenuOpen]);
 
   const handleCloseMenu = () => {
-    setIsMenuOpen(false);
+    setAnchorEl(null);
   };
 
   const menuVariants = {
@@ -74,7 +75,11 @@ const NavMenu = () => {
     <>
       <NavContainer theme={theme} aria-label="Site navigation">
         <NavButton
-          onClick={() => setIsMenuOpen((open) => !open)}
+          onClick={(event) =>
+            setAnchorEl((current) =>
+              current ? null : event.currentTarget
+            )
+          }
           theme={theme}
           aria-label="Open navigation menu"
           aria-haspopup="true"
@@ -85,7 +90,8 @@ const NavMenu = () => {
       </NavContainer>
 
       <Menu
-        anchorOrigin={{ vertical: "top", horizontal: "right" }}
+        anchorEl={anchorEl}
+        anchorOrigin={{ vertical: "bottom", horizontal: "right" }}
         transformOrigin={{ vertical: "top", horizontal: "right" }}
         open={isMenuOpen}
         onClose={handleCloseMenu}
